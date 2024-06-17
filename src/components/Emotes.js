@@ -35,17 +35,17 @@ const Emotes = () => {
     <div>
         <Header />
         <h2 className='title-section'>Badges Twitch</h2>
-        <div className='w-50 m-auto'>
+        <div className='w-75 m-auto'>
           <Image src={badgeTwitch} alt="Badges twitch" />
         </div>
         <StyledHr />
         <h2 className='title-section'>Émotes Twitch - Discord</h2>
-        <div className='w-50 m-auto'>
+        <div className='w-75 m-auto'>
           <Image src={emoteTwitch} alt="Émotes Twitch - Discord" />
         </div>
         <StyledHr />
         <h2 className='title-section'>Planning</h2>
-        <div className='w-50 m-auto mb-5'>
+        <div className='w-75 m-auto mb-5'>
           <Image src={planningTwitch} alt="planning" />
         </div>
     </div>
