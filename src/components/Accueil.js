@@ -29,7 +29,6 @@ const Section = styled.section`
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +46,10 @@ const ContainerLogo = styled.div`
   opacity: 0;
   animation: ${fadeInRotate} 1s ease-in-out forwards;
   animation-delay: 0.5s;
+
+  @media (max-width: 991px) {
+    margin-left:0;
+  }
 `
 
 const Logo = styled.img`
@@ -65,6 +68,13 @@ const Nav = styled.nav`
   width:500px;
   text-align:center;
   line-height:70px;
+
+  @media (max-width: 991px) {
+    margin-left:0;
+    opacity: 0;
+    animation: ${fadeInRotate} 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
 `;
 
 const NavItem = styled.a`

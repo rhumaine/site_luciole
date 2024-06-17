@@ -4,7 +4,7 @@ import { NavLink as RouterNavLink } from 'react-router-dom';
 
 
 const Navbar = styled.nav`
-    width: 30%;
+    width: 60%;
     margin: 50px auto;
     padding: 1rem;
     background-color: rgba(50, 15, 19, 0.8);
@@ -15,6 +15,17 @@ const Navbar = styled.nav`
     z-index: 1000;
     font-family: 'Fredoka', sans-serif;
     border-radius: 5rem;
+
+    @media (max-width: 991px) {
+      width:80%;
+    } 
+    @media (max-width: 768px) {
+      width:90%;
+    }
+
+    @media (max-width: 650px) {
+      width:90%;
+    }
 `;
 
 const NavLink = styled(RouterNavLink)`
