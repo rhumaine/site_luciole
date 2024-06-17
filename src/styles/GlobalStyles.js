@@ -1,8 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
-import backgroundImage from '../img/fond.png';
+import { keyframes } from 'styled-components';
+import backgroundImage from '../img/fond.svg';
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const GlobalStyles = createGlobalStyle`
+
   * {
     margin: 0;
     padding: 0;
@@ -11,8 +23,10 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Arial', sans-serif;
-    background: url(${backgroundImage}),linear-gradient(39deg, #FFD5B6 0%, #72076A 100%);
-    background-size: cover;
+    background: url(${backgroundImage}),linear-gradient(39deg, #FFA7A7 0%, #FD8686 100%);
+    background-size: cover, auto;
+    background-position: center, 0% 0%;
+    background-repeat: no-repeat, repeat;
   }
  
   #root {
@@ -25,7 +39,19 @@ const GlobalStyles = createGlobalStyle`
     flex: 1;
   }
 
+  .title-section{
+    margin: 20px auto;
+    color: #320F13;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.55em;
+    line-height: 1.75;
+    font-weight: 500;
+    text-align: center;
+    animation: ${fadeIn} 1s ease-in-out forwards;
+  }
 
 `;
+
+
 
 export default GlobalStyles;

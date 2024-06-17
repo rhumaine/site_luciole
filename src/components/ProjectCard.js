@@ -5,18 +5,12 @@ const Card = styled.div`
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  width:49%;
 `;
 
 const Image = styled.img`
   width: 100%;
-  height: auto;
-  object-fit: cover;
 `;
 
-const CardContent = styled.div`
-  padding: 1rem;
-`;
 
 const ProjectCard = ({ project }) => {
   return (
