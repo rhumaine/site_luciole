@@ -8,7 +8,7 @@ const Image = styled.img`
   width: 100%;
   transition: transform 0.3s ease-in-out;
 
-   &:hover {
+  &:hover {
     transform: scale(1.1);
   }
 `;
@@ -34,12 +34,12 @@ const LogoBanniere = () => {
     <div>
         <Header />
         <h2 className='title-section'>Logos</h2>
-        <div className='w-50 m-auto'>
+        <div className='w-75 m-auto'>
           <Image src={logo} alt="Logos" />
         </div>
         <StyledHr />
         <h2 className='title-section'>Bannières</h2>
-        <div className='w-50 m-auto mb-5'>
+        <div className='w-75 m-auto mb-5'>
           <Image src={banniere} alt="Bannières" />
         </div>
     </div>

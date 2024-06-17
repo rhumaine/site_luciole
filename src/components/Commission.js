@@ -6,6 +6,10 @@ import Header from './Header';
 const Container = styled.section`
   width: 50%;
   margin: 0 auto;
+
+  @media (max-width: 768px){
+    width:90%;
+  }
 `;
 
 const TextU = styled.u`

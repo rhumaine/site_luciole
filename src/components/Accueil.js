@@ -24,6 +24,10 @@ const Section = styled.section`
   align-items: center;
   height: 100vh;
   padding: 4rem 0;
+
+  @media (max-width: 576px){
+    height:auto;
+  }
 `;
 
 const Container = styled.div`
@@ -75,6 +79,10 @@ const Nav = styled.nav`
     animation: ${fadeInRotate} 1s ease-in-out forwards;
     animation-delay: 0.5s;
   }
+
+  @media (max-width: 991px){
+    width:90%;
+  }
 `;
 
 const NavItem = styled.a`
@@ -120,7 +128,7 @@ const Accueil = () => {
           <NavItem href="/emotes">
             <Icon><FontAwesomeIcon icon={faPaintbrush} /></Icon> Emotes
           </NavItem>
-          <NavItem href="mailto:luciole.pro@outlook.fr">
+          <NavItem href="/logoBanniere">
             <Icon><FontAwesomeIcon icon={faPaintbrush} /></Icon> Logo / Bannière
           </NavItem>
           <NavItem href="mailto:luciole.pro@outlook.fr">
