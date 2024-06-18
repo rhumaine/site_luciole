@@ -6,24 +6,24 @@ import Nav from './components/Nav';
 import Accueil from './components/Accueil';
 import Miniature from './components/Miniature';
 import Commission from './components/Commission';
-import Emotes from './components/Emotes';
-import LogoBanniere from './components/LogoBanniere';
+import Emotes from './components/sous_menu/Emotes';
+import Badges from './components/sous_menu/Badges';
+import Overlay from './components/sous_menu/Overlay';
+import Logo from './components/sous_menu/Logo';
+import Banniere from './components/sous_menu/Banniere';
 
 import GlobalStyles from './styles/GlobalStyles';
+import Planning from './components/sous_menu/Planning';
 
 function NavConditional() {
   const location = useLocation();
 
-  // Liste des chemins où le composant Nav doit être affiché
-  const navPaths = ['/miniature', '/commission', '/emotes', '/logoBanniere'];
+  const navPaths = ['/'];
 
-  // Vérifie si le chemin actuel est dans la liste des chemins où afficher Nav
-  const shouldDisplayNav = navPaths.includes(location.pathname);
+  const shouldDisplayNav = !navPaths.includes(location.pathname);
 
   return shouldDisplayNav ? <Nav /> : null;
 }
-
-
 
 function App() {
   return (
@@ -35,7 +35,11 @@ function App() {
         <Route path="/miniature" element={<Miniature/>} />
         <Route path="/commission" element={<Commission/>} />
         <Route path="/emotes" element={<Emotes/>} />
-        <Route path="/logobanniere" element={<LogoBanniere/>} />
+        <Route path="/badges" element={<Badges/>} />
+        <Route path="/overlay" element={<Overlay/>} />
+        <Route path="/planning" element={<Planning/>} />
+        <Route path="/logo" element={<Logo/>} />
+        <Route path="/banniere" element={<Banniere/>} />
       </Routes>
     </Router>
   );
