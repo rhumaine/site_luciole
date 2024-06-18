@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import planningTwitch from '../../img/Emotes/planning.jpg';
+import overlayRaton from '../../img/overlay/raton.jpg';
 
 const Image = styled.img`
   width: 100%;
@@ -43,9 +43,9 @@ const Overlay = () => {
     return (
     <div>
         <Header />
-        <h2 className='title-section'>Planning</h2>
+        <h2 className='title-section'>Overlay</h2>
         <StyledDiv>
-          <Image src={planningTwitch} alt="planning" />
+          <Image src={overlayRaton} alt="Overlay Raton" />
         </StyledDiv>
     </div>
   );
