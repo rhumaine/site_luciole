@@ -100,6 +100,8 @@ const UlNav = styled.ul`
   @media (min-width: 650px){
     li:hover > ul {
       display: flex;
+      flex-direction: column;
+      left:-15px;
       margin-top: 20px;
       border-radius: 20px;
     }
@@ -247,16 +249,17 @@ function Nav() {
         <li className={openMenu === 'twitch' ? 'open' : ''}>
           <Anchor href="/" onClick={(e) => handleMenuClick('twitch', e)}>Twitch</Anchor>
           <ul>
-            <li><NavLink to="/logoBanniere/emote" onClick={handleLinkClick}>Emotes</NavLink></li>
-            <li><NavLink to="/logoBanniere/badge" onClick={handleLinkClick}>Badges</NavLink></li>
-            <li><NavLink to="/logoBanniere/badge" onClick={handleLinkClick}>Overlay</NavLink></li>
+            <li><NavLink to="/emotes" onClick={handleLinkClick}>Emotes</NavLink></li>
+            <li><NavLink to="/badges" onClick={handleLinkClick}>Badges</NavLink></li>
+            <li><NavLink to="/overlay" onClick={handleLinkClick}>Overlay</NavLink></li>
+            <li><NavLink to="/planning" onClick={handleLinkClick}>Planning</NavLink></li>
           </ul>
         </li>
         <li className={openMenu === 'da' ? 'open' : ''}>
           <Anchor href="/" onClick={(e) => handleMenuClick('da', e)}>D.A</Anchor>
           <ul>
-            <li><NavLink to="/logoBanniere/emote" onClick={handleLinkClick}>Logo</NavLink></li>
-            <li><NavLink to="/logoBanniere/badge" onClick={handleLinkClick}>Bannière</NavLink></li>
+            <li><NavLink to="/logo" onClick={handleLinkClick}>Logo</NavLink></li>
+            <li><NavLink to="/banniere" onClick={handleLinkClick}>Bannière</NavLink></li>
           </ul>
         </li>
         <li><NavLink to="mailto:luciole.pro@outlook.fr" onClick={handleLinkClick}>Contact</NavLink></li>
