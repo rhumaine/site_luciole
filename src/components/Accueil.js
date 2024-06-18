@@ -128,7 +128,7 @@ const Accueil = () => {
           <NavItem href="/emotes">
             <Icon><FontAwesomeIcon icon={faPaintbrush} /></Icon> Emotes
           </NavItem>
-          <NavItem href="/logoBanniere">
+          <NavItem href="/logo">
             <Icon><FontAwesomeIcon icon={faPaintbrush} /></Icon> Logo / Bannière
           </NavItem>
           <NavItem href="mailto:luciole.pro@outlook.fr">
