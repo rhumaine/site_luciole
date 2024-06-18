@@ -13,7 +13,7 @@ const Image = styled.img`
   }
 `;
 
-const StyledHr = styled.hr`
+/*const StyledHr = styled.hr`
   width:50%;
   margin:80px auto;
   border:none;
@@ -26,7 +26,7 @@ const StyledHr = styled.hr`
     border-top: dotted 5px #320F13;
     height: 4px;
   }
-`;
+`;*/
 
 const StyledDiv = styled.div`
   width: 50%; 

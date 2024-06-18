@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import badgeTwitch from '../../img/Emotes/badgeTwitch.jpg';
 import emoteTwitch from '../../img/Emotes/emote_twitch.jpg';
-import planningTwitch from '../../img/Emotes/planning.jpg';
 
 const Image = styled.img`
   width: 100%;
@@ -15,7 +13,7 @@ const Image = styled.img`
   }
 `;
 
-const StyledHr = styled.hr`
+/*const StyledHr = styled.hr`
   width:50%;
   margin:80px auto;
   border:none;
@@ -28,7 +26,7 @@ const StyledHr = styled.hr`
     border-top: dotted 5px #320F13;
     height: 4px;
   }
-`;
+`;*/
 
 
 const StyledDiv = styled.div`
