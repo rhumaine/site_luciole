@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './Header';
-import logo from '../img/logoBannieres/logos.jpg';
-import banniere from '../img/logoBannieres/bannieres.jpg';
+import Header from '../Header';
+import logo from '../../img/logoBannieres/logos.jpg';
 
 const Image = styled.img`
   width: 100%;
+  margin-bottom:50px;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -13,7 +13,7 @@ const Image = styled.img`
   }
 `;
 
-const StyledHr = styled.hr`
+/*const StyledHr = styled.hr`
   width:50%;
   margin:80px auto;
   border:none;
@@ -27,23 +27,29 @@ const StyledHr = styled.hr`
     height: 4px;
   }
 `;
+*/
 
-const LogoBanniere = () => {
+const StyledDiv = styled.div`
+  width: 50%; 
+  margin: 10px auto 30px auto; 
+  
+  @media (max-width: 768px) { 
+    width: 75%; 
+  }
+`;
+
+const Logo = () => {
  
     return (
     <div>
         <Header />
         <h2 className='title-section'>Logos</h2>
-        <div className='w-75 m-auto'>
+        <StyledDiv>
           <Image src={logo} alt="Logos" />
-        </div>
-        <StyledHr />
-        <h2 className='title-section'>Bannières</h2>
-        <div className='w-75 m-auto mb-5'>
-          <Image src={banniere} alt="Bannières" />
-        </div>
+          <Image src={logo} alt="Logos" />
+        </StyledDiv>
     </div>
   );
 };
 
-export default LogoBanniere;
+export default Logo;
