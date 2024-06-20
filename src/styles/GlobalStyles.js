@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Fredoka', cursive;
     background: url(${backgroundImage}),linear-gradient(39deg, #FFA7A7 0%, #FD8686 100%);
     background-size: contain;
     background-position: center, 0% 0%;

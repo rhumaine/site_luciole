@@ -30,7 +30,7 @@ const HeaderWrapper = styled.header``;
 
 const TitleHeader = styled.h2`
   padding: 1rem;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka', cursive;
   text-align: center;
   color: #320F13;
   font-size: 1.875em;
