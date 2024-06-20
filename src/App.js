@@ -6,19 +6,19 @@ import Nav from './components/Nav';
 import Accueil from './components/Accueil';
 import Miniature from './components/Miniature';
 import Commission from './components/Commission';
+import Portfolio from './components/Portfolio';
 import Emotes from './components/sous_menu/Emotes';
 import Badges from './components/sous_menu/Badges';
 import Overlay from './components/sous_menu/Overlay';
 import Logo from './components/sous_menu/Logo';
 import Banniere from './components/sous_menu/Banniere';
-
 import GlobalStyles from './styles/GlobalStyles';
 import Planning from './components/sous_menu/Planning';
 
 function NavConditional() {
   const location = useLocation();
 
-  const navPaths = ['/'];
+  const navPaths = ['/', '/portfolio'];
 
   const shouldDisplayNav = !navPaths.includes(location.pathname);
 
@@ -34,6 +34,7 @@ function App() {
         <Route path="/" element={<Accueil/>} />
         <Route path="/miniature" element={<Miniature/>} />
         <Route path="/commission" element={<Commission/>} />
+        <Route path="/portfolio" element={<Portfolio/>} />
         <Route path="/emotes" element={<Emotes/>} />
         <Route path="/badges" element={<Badges/>} />
         <Route path="/overlay" element={<Overlay/>} />

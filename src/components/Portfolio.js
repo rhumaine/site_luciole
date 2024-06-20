@@ -1,12 +1,10 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import logo from '../img/logo_luciole.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importer FontAwesomeIcon
-import { faPaintbrush, faCheck, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Importer les icônes utilisées
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importer FontAwesomeIcon
+//import { faPaintbrush, faCheck, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Importer les icônes utilisées
 
 
 // Styles
-
 const fadeInRotate = keyframes`
   from {
     opacity: 0;
@@ -39,39 +37,12 @@ const Container = styled.div`
   flex-wrap: wrap;
 `;
 
-const ContainerLogo = styled.div`
-  width: 21.875rem;
-  height: 21.5rem;
-  border-radius: 1.875rem;
-  border-color: #320F13;
-  border-style: solid;
-  border-width: 4px;
-  margin-left: 20px;
-  opacity: 0;
-  animation: ${fadeInRotate} 1s ease-in-out forwards;
-  animation-delay: 0.5s;
-
-  @media (max-width: 991px) {
-    margin-left:0;
-  }
-`
-
-const Logo = styled.img`
-  height: 100% !important;
-  object-fit: cover;
-  object-position: center;
-  width: 100% !important;
-  border-radius: inherit !important;
-  padding: 0.375rem;
-`;
-
 const Nav = styled.nav`
   display: flex;
-  flex-direction: column; /* Aligner les éléments en colonne */
-  margin-left: 80px;
-  width:500px;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align:center;
-  line-height:70px;
+  gap:50px 20px;
 
   @media (max-width: 991px) {
     margin-left:0;
@@ -86,6 +57,9 @@ const Nav = styled.nav`
 `;
 
 const NavItem = styled.a`
+  width:25%;
+  height:120px;
+  line-height:120px;
   font-family: 'Arial', sans-serif;
   color: #320F13;
   font-size: 1.5rem;
@@ -104,29 +78,39 @@ const NavItem = styled.a`
     border-color: #ED6171 !important;
     color: #ED6171 !important;
   }
+
+  @media (max-width: 991px){
+    width:90%;
+  }
 `;
 
-const Icon = styled.span`
-  margin-right: 1rem; /* Espacement entre l'icône et le texte */
-`;
 
 
-const Accueil = () => {
+const Portfolio = () => {
   return (
     <Section>
       <Container>
-        <ContainerLogo>
-          <Logo src={logo} alt="Logo Luciole" />
-        </ContainerLogo>
         <Nav>
-          <NavItem href="/commission">
-            <Icon><FontAwesomeIcon icon={faCheck} size="xl" /></Icon> Commission
+          <NavItem href="/miniature">
+             Miniatures
           </NavItem>
-          <NavItem href="/portfolio">
-            <Icon><FontAwesomeIcon icon={faPaintbrush} /></Icon> Portfolio
+          <NavItem href="/emotes">
+             Twitch Emotes
           </NavItem>
-          <NavItem href="mailto:luciole.pro@outlook.fr">
-            <Icon><FontAwesomeIcon icon={faEnvelope} /></Icon> Contact
+          <NavItem href="/badges">
+             Twitch Badges
+          </NavItem>
+          <NavItem href="/overlay">
+             Twitch Overlay
+          </NavItem>
+          <NavItem href="/planning">
+             Twitch Planning
+          </NavItem>
+          <NavItem href="/logo">
+             D.A Logo
+          </NavItem>
+          <NavItem href="/banniere">
+             D.A Bannières
           </NavItem>
         </Nav>
       </Container>
@@ -134,4 +118,4 @@ const Accueil = () => {
   );
 };
 
-export default Accueil;
+export default Portfolio;

@@ -24,9 +24,13 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Arial', sans-serif;
     background: url(${backgroundImage}),linear-gradient(39deg, #FFA7A7 0%, #FD8686 100%);
-    background-size: cover, auto;
+    background-size: contain;
     background-position: center, 0% 0%;
-    background-repeat: no-repeat, repeat;
+    font-size: 22px;
+
+    @media (max-width : 768px){
+      font-size:18px;
+    }
   }
  
   #root {

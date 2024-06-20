@@ -3,6 +3,12 @@ import styled from 'styled-components';
 import  ChevronRight  from '../img/chevron_right.svg';
 import Header from './Header';
 
+
+import commissionMiniature from '../img/portfolio/miniature.jpg';
+import commissionEmotes from '../img/portfolio/emotes.jpg';
+import commissionBadges from '../img/portfolio/badges.jpg';
+import commissionOverlay from '../img/portfolio/overlay.jpg';
+
 const Container = styled.section`
   width: 50%;
   margin: 0 auto;
@@ -32,7 +38,6 @@ const ListItem = styled.li`
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  font-size:1.5em;
   color:#320F13
 `;
 
@@ -59,6 +64,57 @@ const Icon = styled.span`
   min-width: 0.9375rem;
 `;
 
+const StyledHr = styled.hr`
+  width:50%;
+  margin:80px auto;
+  border:none;
+  opacity:0.8;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-top: dotted 5px #ff6a6a;
+    height: 4px;
+  }
+` 
+const StyledTitle = styled.p `
+  text-align: center;
+  color: #320F13;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2em;
+  line-height: 1.75;
+  font-weight: 400;
+`
+
+const Image = styled.img`
+  display:block;
+  width: 80%;
+  margin:0 auto;
+  margin-bottom:50px;
+  transition: transform 0.3s ease-in-out;
+
+   &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+const ImageOut = styled.img`
+  display:block;
+  width: 60%;
+  margin:0 auto;
+  margin-bottom:50px;
+  transition: transform 0.3s ease-in-out;
+
+   &:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px){
+    width:90%;
+  }
+`;
+
 const Commission = () => {
   return (
     <div>
@@ -66,54 +122,70 @@ const Commission = () => {
       <Container>
         <TextU>Ce que je propose :</TextU>
         <ListUl>
-          <ListItem>
-            <Icon/>
-            Miniatures Youtube
-          </ListItem>
-          <ListItem>
-            <Icon/>
-            Badges Twitch
-          </ListItem>
-          <ListItem>
-            <Icon/>
-            Émotes (textes ou illustrations)
-          </ListItem>
-          <ListItem>
-            <Icon/>
-            Bannières Twitch
-          </ListItem>
-          <ListItem>
-            <Icon/>
-            Overlays Twitch
-          </ListItem>
-          <ListItem>
-            <Icon/>
-            Planning
-          </ListItem>
-          <ListItem>
-            <Icon/>
-            DA : Conception d’identité visuelle et graphique (logo, bannière ...)
-          </ListItem>
+          <ListItem><Icon/>Miniatures Youtube</ListItem>
+          <ListItem><Icon/>Badges Twitch</ListItem>
+          <ListItem><Icon/>Émotes (textes ou illustrations)</ListItem>
+          <ListItem><Icon/>Bannières Twitch</ListItem>
+          <ListItem><Icon/>Overlays Twitch</ListItem>
+          <ListItem><Icon/>Planning</ListItem>
+          <ListItem><Icon/>DA : Conception d’identité visuelle et graphique (logo, bannière ...)</ListItem>
         </ListUl>
         <TextU>Pour les commandes vous pouvez me contacter :</TextU>
         <ListUl>
-          <ListItem>
-            <Icon/>
-            Par DM Twitter :
-            <StyledLink href="https://twitter.com/Luuciiole" target="_blank">
-              @Luuciiole
-            </StyledLink>
-          </ListItem>
-          <ListItem>
-            <Icon/>
-            Par mail :
-            <StyledLink href="mailto:luciole.pro@outlook.fr">
-              luciole.pro@outlook.fr
-            </StyledLink>
-          </ListItem>
-          {/* Ajoutez d'autres éléments de liste avec des icônes ici */}
+          <ListItem><Icon/>Par DM Twitter : <StyledLink href="https://twitter.com/Luuciiole" target="_blank">@Luuciiole</StyledLink></ListItem>
+          <ListItem><Icon/>Par mail :<StyledLink href="mailto:luciole.pro@outlook.fr">luciole.pro@outlook.fr</StyledLink></ListItem>
         </ListUl>
-      </Container>
+        <StyledHr></StyledHr>
+        <StyledTitle><strong>COMMENT SE DÉROULE LA COMMANDE</strong></StyledTitle>
+        <ListUl>
+          <ListItem><Icon/>Avant toute commande, je demande un acompte à titre de sécurité. Merci pour votre compréhension !</ListItem>
+        </ListUl>
+        <TextU>Pour les miniatures :</TextU>
+        <ListUl>
+          <ListItem><Icon/>1ère étape : je réalise un premier rendu en fonction de vos demandes.</ListItem>
+          <ListItem><Icon/>2ème étape : je procède aux modifications en tenant compte de vos retours, si nécessaire.</ListItem>
+        </ListUl>
+        <TextU>Pour les émotes, badges, logos, bannières .. :</TextU>
+        <ListUl>
+          <ListItem><Icon/>1ère étape : je réalise un croquis en utilisant vos idées et en effectuant des recherches pour la composition. (Pour cette étape, plusieurs retours peuvent être effectués)</ListItem>
+          <ListItem><Icon/>2ème étape : une fois le premier rendu validé, je créé la palette de couleurs. Il est impossible de modifier la composition à ce stade (des retours sont possibles sur les couleurs ou certains petits détails).</ListItem>
+        </ListUl>
+        <StyledHr></StyledHr>
+        <StyledTitle><strong>Tarif</strong></StyledTitle>
+        <TextU>Miniature :</TextU>
+        <ListUl>
+          <ListItem><Icon/>Miniature avec beaucoup de détails : 30€</ListItem>
+          <ListItem><Icon/>Miniature simple : 20€</ListItem>
+          <ListItem><Icon/>+ 5 miniatures : 10€ par miniature supplémentaire</ListItem>
+        </ListUl>
+        <Image src={commissionMiniature} alt="Exemple Miniature" />
+        <TextU>Émote :</TextU>
+        <ListUl>
+          <ListItem><Icon/>15€ l'unité</ListItem>
+          <ListItem><Icon/>pack de 3 émotes : 40€</ListItem>
+          <ListItem><Icon/>pack de 5 émotes : 65€</ListItem>
+          <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée</ListItem>
+        </ListUl>
+        <Image src={commissionEmotes} alt="Exemple Emotes" />
+        <TextU>Badge Twitch / Discord :</TextU>
+        <ListUl>
+          <ListItem><Icon/>Badge avec changement de couleurs : 6€ l'unité</ListItem>
+          <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>
+        </ListUl>
+        <Image src={commissionBadges} alt="Exemple Badges" />
+        <TextU>Bannière Twitch :</TextU>
+        <ListUl>
+          <ListItem><Icon/>12€ l'unité</ListItem>
+          <ListItem><Icon/>4 bannières : 38€</ListItem>
+          <ListItem><Icon/>+ de 5 bannières : 10€ chaque bannière ajoutée</ListItem>
+        </ListUl>
+        <TextU>Overlay Twitch :</TextU>
+        <ListUl>
+          <ListItem><Icon/>40€ l'unité</ListItem>
+          <ListItem><Icon/>+ de 4 overlays : 20 € chaque overlay ajouté</ListItem>
+        </ListUl>
+        </Container>
+        <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
     </div>
   );
 };
