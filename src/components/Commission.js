@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import  ChevronRight  from '../img/chevron_right.svg';
+import ChevronRight  from '../img/chevron_right.svg';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 
@@ -8,12 +8,15 @@ import commissionMiniature from '../img/portfolio/miniature.jpg';
 import commissionEmotes from '../img/portfolio/emotes.jpg';
 import commissionBadges from '../img/portfolio/badges.jpg';
 import commissionOverlay from '../img/portfolio/overlay.jpg';
+import commissionPlanning from '../img/portfolio/planning.jpg';
+import commissionLogo from '../img/portfolio/logo.jpg';
+import commissionBanniere from '../img/portfolio/banniere.jpg';
 
 const Container = styled.section`
   width: 50%;
   margin: 0 auto;
 
-  @media (max-width: 768px){
+  @media (max-width: 991px){
     width:90%;
   }
 `;
@@ -39,11 +42,6 @@ const ListItem = styled.li`
   display: flex;
   align-items: center;
   color:#320F13;
-
-  & a {
-    color: inherit;
-    text-decoration: none;
-  }
   
   & a:hover{
     color: #ED6171;
@@ -131,11 +129,11 @@ const Commission = () => {
       <Container>
         <TextU>Ce que je propose :</TextU>
         <ListUl>
-          <ListItem><Icon/><a href="#miniature">Miniatures Youtube</a></ListItem>
-          <ListItem><Icon/><a href="#badges">Badges Twitch</a></ListItem>
-          <ListItem><Icon/><a href="#emotes">Émotes (textes ou illustrations)</a></ListItem>
-          <ListItem><Icon/><a href="#banniere">Bannières Twitch</a></ListItem>
-          <ListItem><Icon/><a href="#overlay">Overlays Twitch</a></ListItem>
+          <ListItem><Icon/><StyledLink href="#miniature">Miniatures Youtube</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#badges">Badges Twitch</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#banniere">Bannières Twitch</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
           <ListItem><Icon/>Planning</ListItem>
           <ListItem><Icon/>DA : Conception d’identité visuelle et graphique (logo, bannière ...)</ListItem>
         </ListUl>
@@ -193,9 +191,26 @@ const Commission = () => {
           <ListItem><Icon/>40€ l'unité</ListItem>
           <ListItem><Icon/>+ de 4 overlays : 20 € chaque overlay ajouté</ListItem>
         </ListUl>
-        </Container>
-        <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
-        <ScrollToTop/>
+      </Container>
+      <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
+      <Container>
+        <TextU>Planning</TextU>
+        <ListUl>
+          <ListItem><Icon/>Template de planning : 40€</ListItem>
+          <ListItem><Icon/>Mini Planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
+          <ListItem><Icon/>Visuels pour le planning : entre 7€ et 10€ l'unité</ListItem> 
+        </ListUl>
+        <Image src={commissionPlanning} alt="Exemple Planning" />
+        <TextU>D.A</TextU>
+        <ListUl>
+          <ListItem><Icon/>Logo : 20€</ListItem>
+          <ListItem><Icon/>Bannière : 35€</ListItem> 
+          <ListItem><Icon/>Logo + bannière : 45€</ListItem> 
+        </ListUl>
+        <Image src={commissionLogo} alt="Exemple Logo" />
+        <Image src={commissionBanniere} alt="Exemple Banniere" />
+      </Container>  
+      <ScrollToTop/>
     </div>
   );
 };

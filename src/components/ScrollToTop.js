@@ -15,7 +15,7 @@ const ScrollButton = styled.div`
   border-radius: 50%;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
-  opacity: ${props => (props.visible ? '0.8' : '0')};
+  opacity: ${(props) => (props.$visible ? '0.8' : '0')};
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.7);
@@ -24,6 +24,10 @@ const ScrollButton = styled.div`
   & img {
     width: 24px;
     height: 24px;
+  }
+
+  @media (max-width: 768px) { 
+    display:none; 
   }
 `;
 
@@ -53,7 +57,7 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <ScrollButton onClick={scrollToTop} visible={visible}>
+    <ScrollButton onClick={scrollToTop} $visible={visible}>
       <img src={UpArrow} alt="Go to top" />
     </ScrollButton>
   );
