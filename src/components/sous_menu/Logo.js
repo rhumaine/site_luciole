@@ -46,7 +46,6 @@ const Logo = () => {
         <h2 className='title-section'>Logos</h2>
         <StyledDiv>
           <Image src={logo} alt="Logos" />
-          <Image src={logo} alt="Logos" />
         </StyledDiv>
     </div>
   );
