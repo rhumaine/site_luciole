@@ -134,8 +134,8 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#banniere">Bannières Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
-          <ListItem><Icon/>Planning</ListItem>
-          <ListItem><Icon/>DA : Conception d’identité visuelle et graphique (logo, bannière ...)</ListItem>
+          <ListItem><Icon/><StyledLink href="#planning">Planning</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#daz">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
         </ListUl>
         <TextU>Pour les commandes vous pouvez me contacter :</TextU>
         <ListUl>
@@ -194,14 +194,14 @@ const Commission = () => {
       </Container>
       <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
       <Container>
-        <TextU>Planning</TextU>
+        <TextU id="planning">Planning</TextU>
         <ListUl>
           <ListItem><Icon/>Template de planning : 40€</ListItem>
           <ListItem><Icon/>Mini Planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
           <ListItem><Icon/>Visuels pour le planning : entre 7€ et 10€ l'unité</ListItem> 
         </ListUl>
         <Image src={commissionPlanning} alt="Exemple Planning" />
-        <TextU>D.A</TextU>
+        <TextU id="da">D.A</TextU>
         <ListUl>
           <ListItem><Icon/>Logo : 20€</ListItem>
           <ListItem><Icon/>Bannière : 35€</ListItem> 
