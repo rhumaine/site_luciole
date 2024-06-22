@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 
 // Les pages
 import Accueil from './components/Accueil';
-import Miniature from './components/Miniature';
+import MiniatureContainer from './components/MiniatureContainer';
 import Commission from './components/Commission';
 import Portfolio from './components/Portfolio';
 import Emotes from './components/sous_menu/Emotes';
@@ -32,7 +32,7 @@ function App() {
       <NavConditional />
       <Routes>
         <Route path="/" element={<Accueil/>} />
-        <Route path="/miniature" element={<Miniature/>} />
+        <Route path="/miniature" element={<MiniatureContainer/>} />
         <Route path="/commission" element={<Commission/>} />
         <Route path="/portfolio" element={<Portfolio/>} />
         <Route path="/emotes" element={<Emotes/>} />

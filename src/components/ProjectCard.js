@@ -16,14 +16,6 @@ const ProjectCard = ({ project }) => {
   return (
     <Card>
       <Image src={project.imageUrl} alt={project.title} />
-      {/*
-      
-      <CardContent>
-        Ceci est un commentaire à l'intérieur des balises JSX  <h3>{project.title}</h3>
-       <p>{project.description}</p>
-      </CardContent>
-
-      */}
     </Card>
   );
 };

@@ -1,13 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
-import Header from './Header';
 import ScrollToTop from './ScrollToTop';
-import ChevronRight  from '../img/chevron_right.svg';
-import { ultiaCyberpunk, ultiaIttakesTwo, ultiaSpiritfarer, ultiaStardew, ultiaAutre } from './data/ultiaData';
+import ChevronRight from '../img/chevron_right.svg';
 
-const SectionUltia = styled.div``;
-
+const Section = styled.div``;
 
 const PortfolioWrapper = styled.div`
   display: flex;
@@ -18,12 +15,10 @@ const PortfolioWrapper = styled.div`
   width: 80%;
   justify-content: center;
 
-
-  @media (max-width: 768px) { 
-    width: 100%; 
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
-
 
 const ProjectCardWrapper = styled.div`
   flex: 1 1 calc(50% - 1rem); 
@@ -34,7 +29,7 @@ const ProjectCardWrapper = styled.div`
     flex: 0 0 100%;
   }
   @media (max-width: 991px) {
-    flex: 1 1 100%; /* 1 image à 100% de la largeur pour les petites résolutions */
+    flex: 1 1 100%;
   }
 `;
 
@@ -46,7 +41,7 @@ const ProjectCardContent = styled.div`
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease-in-out;
-    display: block; /* Prevents space under the image */
+    display: block;
   }
 
   &:hover img {
@@ -58,30 +53,30 @@ const Container = styled.section`
   width: 50%;
   margin: 0 auto;
 
-  @media (max-width: 991px){
-    width:90%;
+  @media (max-width: 991px) {
+    width: 90%;
   }
 `;
 
 const ListUl = styled.ul`
   list-style-type: none;
   padding: 0;
-  margin:30px auto
+  margin: 30px auto;
 `;
 
 const ListItem = styled.li`
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  color:#320F13;
-  
-  & a:hover{
-    color: #ED6171;
+  color: #320f13;
+
+  & a:hover {
+    color: #ed6171;
   }
 `;
 
 const StyledLink = styled.a`
-  color: #320F13;
+  color: #320f13;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: border-bottom-color 0.3s ease-in-out;
@@ -89,8 +84,8 @@ const StyledLink = styled.a`
 
 const Icon = styled.span`
   margin-right: 10px;
-  width: 24px; /* Ajustez la taille selon votre SVG */
-  height: 24px; /* Ajustez la taille selon votre SVG */
+  width: 24px;
+  height: 24px;
   display: inline-block;
   vertical-align: middle;
   border-radius: 2rem;
@@ -98,16 +93,13 @@ const Icon = styled.span`
   background-position: left 60%;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 1.546875rem;
-  line-height: 1.546875rem;
-  min-width: 0.9375rem;
 `;
 
 const StyledHr = styled.hr`
-  width:50%;
-  margin:80px auto;
-  border:none;
-  opacity:0.8;
+  width: 50%;
+  margin: 80px auto;
+  border: none;
+  opacity: 0.8;
 
   &::before {
     content: '';
@@ -116,59 +108,59 @@ const StyledHr = styled.hr`
     border-top: dotted 5px #ff6a6a;
     height: 4px;
   }
-`
+`;
 
-const categories = [
-  { id: 'cyberpunk', title: 'Cyberpunk', data: ultiaCyberpunk },
-  { id: 'ittakestwo', title: 'It Takes Two', data: ultiaIttakesTwo },
-  { id: 'stardewvalley', title: 'Stardew Valley', data: ultiaStardew },
-  { id: 'spiritfarer', title: 'Spiritfarer', data: ultiaSpiritfarer },
-  { id: 'autres', title: 'Autres', data: ultiaAutre },
-];
+const CategorySection = React.memo(({ category }) => {
+  const isOdd = category.data.length % 2 !== 0;
 
-const Miniature = () => {
+  return (
+    <>
+      <h2 className='title-section' id={category.id}>{category.title}</h2>
+      <PortfolioWrapper>
+        {category.data.map((project, index) => {
+          const isFirstAndOdd = index === 0 && isOdd;
+
+          return (
+            <ProjectCardWrapper key={project.id} className={isFirstAndOdd ? 'large-image' : ''}>
+              <ProjectCardContent>
+                <ProjectCard project={project} />
+              </ProjectCardContent>
+            </ProjectCardWrapper>
+          );
+        })}
+      </PortfolioWrapper>
+    </>
+  );
+});
+
+const Miniature = ({ person }) => {
+
+  if (!person) {
+    return null;
+  }
   return (
     <div>
-      <Header />
-      <SectionUltia>
+      <Section>
         <Container>
-          <h2 className='title-section'>Miniatures pour Ultia</h2>
+          <h2 className='title-section'>Miniatures pour {person.name}</h2>
           <ListUl>
-          {categories.map(category => (
-            <ListItem key={category.id}>
-              <Icon />
-              <StyledLink href={`#${category.id}`}>{category.title}</StyledLink>
-            </ListItem>
-          ))}
-        </ListUl>
+            {person.categories.map(category => (
+              <ListItem key={category.id}>
+                <Icon />
+                <StyledLink href={`#${category.id}`}>{category.title}</StyledLink>
+              </ListItem>
+            ))}
+          </ListUl>
         </Container>
-       
-        {categories.map((category, index) => {
-        const isOdd = category.data.length % 2 !== 0;
 
-        return (
+        {person.categories.map((category, index) => (
           <React.Fragment key={category.id}>
-            <h2 className='title-section' id={category.id}>{category.title}</h2>
-            <PortfolioWrapper>
-              {category.data.map((project, index) => {
-                const isFirstAndOdd = index === 0 && isOdd;
-
-                return (
-                  <ProjectCardWrapper key={project.id} className={isFirstAndOdd ? 'large-image' : ''}>
-                    <ProjectCardContent>
-                      <ProjectCard project={project} />
-                    </ProjectCardContent>
-                  </ProjectCardWrapper>
-                );
-              })}
-            </PortfolioWrapper>
-            {index !== categories.length - 1 && <StyledHr />}
+            <CategorySection category={category} />
+            {index !== person.categories.length - 1 && <StyledHr />}
           </React.Fragment>
-        );
-      })}
-
-      </SectionUltia>
-      <ScrollToTop/>
+        ))}
+      </Section>
+      <ScrollToTop />
     </div>
   );
 };
