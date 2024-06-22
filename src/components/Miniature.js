@@ -143,9 +143,9 @@ const Miniature = () => {
         </ListUl>
         </Container>
        
-        {categories.map(category => {
+        {categories.map((category, index) => {
         const isOdd = category.data.length % 2 !== 0;
-        
+
         return (
           <React.Fragment key={category.id}>
             <h2 className='title-section' id={category.id}>{category.title}</h2>
@@ -162,7 +162,7 @@ const Miniature = () => {
                 );
               })}
             </PortfolioWrapper>
-            <StyledHr />
+            {index !== categories.length - 1 && <StyledHr />}
           </React.Fragment>
         );
       })}
