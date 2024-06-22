@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 import ChevronRight  from '../img/chevron_right.svg';
+import { ultiaCyberpunk, ultiaIttakesTwo, ultiaSpiritfarer, ultiaStardew, ultiaAutre } from './data/ultiaData';
 
 const SectionUltia = styled.div``;
 
@@ -117,92 +118,15 @@ const StyledHr = styled.hr`
   }
 `
 
-
-const ultiaCyberpunk = [  
-  { id: 1, imageUrl: '../img/miniatures/ultia/cyberpunk/01.jpg' },
-  { id: 2, imageUrl: '../img/miniatures/ultia/cyberpunk/02.jpg' },
-  { id: 3, imageUrl: '../img/miniatures/ultia/cyberpunk/03.jpg' },
-  { id: 4, imageUrl: '../img/miniatures/ultia/cyberpunk/04.jpg' },
-  { id: 5, imageUrl: '../img/miniatures/ultia/cyberpunk/05.jpg' },
-  { id: 6, imageUrl: '../img/miniatures/ultia/cyberpunk/06.jpg' },
-  { id: 7, imageUrl: '../img/miniatures/ultia/cyberpunk/07.jpg' },
-  { id: 8, imageUrl: '../img/miniatures/ultia/cyberpunk/08.jpg' },
-  { id: 9, imageUrl: '../img/miniatures/ultia/cyberpunk/09.jpg' },
-  { id: 10, imageUrl: '../img/miniatures/ultia/cyberpunk/10.jpg' },
-  { id: 11, imageUrl: '../img/miniatures/ultia/cyberpunk/11.jpg' },
-  { id: 12, imageUrl: '../img/miniatures/ultia/cyberpunk/12.jpg' },
-  { id: 13, imageUrl: '../img/miniatures/ultia/cyberpunk/13.jpg' },
+const categories = [
+  { id: 'cyberpunk', title: 'Cyberpunk', data: ultiaCyberpunk },
+  { id: 'ittakestwo', title: 'It Takes Two', data: ultiaIttakesTwo },
+  { id: 'stardewvalley', title: 'Stardew Valley', data: ultiaStardew },
+  { id: 'spiritfarer', title: 'Spiritfarer', data: ultiaSpiritfarer },
+  { id: 'autres', title: 'Autres', data: ultiaAutre },
 ];
-
-const ultiaIttakesTwo = [  
-  { id: 1, imageUrl: '../img/miniatures/ultia/ittakestwo/01.png' },
-  { id: 2, imageUrl: '../img/miniatures/ultia/ittakestwo/02.jpg' },
-  { id: 3, imageUrl: '../img/miniatures/ultia/ittakestwo/03.png' },
-  { id: 4, imageUrl: '../img/miniatures/ultia/ittakestwo/04.jpg' },
-  { id: 5, imageUrl: '../img/miniatures/ultia/ittakestwo/05.jpg' },
-  { id: 6, imageUrl: '../img/miniatures/ultia/ittakestwo/06.jpg' },
-  { id: 7, imageUrl: '../img/miniatures/ultia/ittakestwo/07.jpg' }
-];
-
-const ultiaSpiritfarer = [  
-  { id: 1, imageUrl: '../img/miniatures/ultia/spiritfarer/01.png' },
-  { id: 2, imageUrl: '../img/miniatures/ultia/spiritfarer/02.png' },
-  { id: 3, imageUrl: '../img/miniatures/ultia/spiritfarer/03.jpg' },
-  { id: 4, imageUrl: '../img/miniatures/ultia/spiritfarer/04.png' },
-  { id: 5, imageUrl: '../img/miniatures/ultia/spiritfarer/05.jpg' },
-  { id: 6, imageUrl: '../img/miniatures/ultia/spiritfarer/06.jpg' },
-  { id: 7, imageUrl: '../img/miniatures/ultia/spiritfarer/07.jpg' },
-  { id: 8, imageUrl: '../img/miniatures/ultia/spiritfarer/08.jpg' },
-  { id: 9, imageUrl: '../img/miniatures/ultia/spiritfarer/09.jpg' },
-  { id: 10, imageUrl: '../img/miniatures/ultia/spiritfarer/10.jpg' },
-  { id: 11, imageUrl: '../img/miniatures/ultia/spiritfarer/11.jpg' },
-  { id: 12, imageUrl: '../img/miniatures/ultia/spiritfarer/12.jpg' },
-  { id: 13, imageUrl: '../img/miniatures/ultia/spiritfarer/13.jpg' },
-  { id: 14, imageUrl: '../img/miniatures/ultia/spiritfarer/14.jpg' }
-];
-
-const ultiaStardew = [  
-  { id: 1, imageUrl: '../img/miniatures/ultia/stardewvalley/dfg_international.jpg' },
-  { id: 2, imageUrl: '../img/miniatures/ultia/stardewvalley/04.jpg' },
-  { id: 3, imageUrl: '../img/miniatures/ultia/stardewvalley/05.jpg' },
-  { id: 4, imageUrl: '../img/miniatures/ultia/stardewvalley/06.jpg' },
-  { id: 5, imageUrl: '../img/miniatures/ultia/stardewvalley/07.jpg' },
-  { id: 6, imageUrl: '../img/miniatures/ultia/stardewvalley/08.jpg' },
-  { id: 7, imageUrl: '../img/miniatures/ultia/stardewvalley/09.jpg' },
-  { id: 8, imageUrl: '../img/miniatures/ultia/stardewvalley/10.jpg' },
-  { id: 9, imageUrl: '../img/miniatures/ultia/stardewvalley/11.jpg' },
-  { id: 10, imageUrl: '../img/miniatures/ultia/stardewvalley/12.jpg' },
-  { id: 11, imageUrl: '../img/miniatures/ultia/stardewvalley/13.jpg' },
-  { id: 12, imageUrl: '../img/miniatures/ultia/stardewvalley/14.jpg' },
-  { id: 13, imageUrl: '../img/miniatures/ultia/stardewvalley/15.jpg' },
-  { id: 14, imageUrl: '../img/miniatures/ultia/stardewvalley/16.jpg' }
-];
-
-
-
-
-
-const ultiaAutre = [
-  { id: 1, imageUrl: '../img/miniatures/ultia/autres/mariage.png' },
-  { id: 2, imageUrl: '../img/miniatures/ultia/autres/webtoon.png' },
-  { id: 3, imageUrl: '../img/miniatures/ultia/autres/perdu_paris.jpg' },
-  { id: 4, imageUrl: '../img/miniatures/ultia/autres/twitch_rivals.jpg' },
-  { id: 5, imageUrl: '../img/miniatures/ultia/autres/big_city.jpg' },
-  { id: 6, imageUrl: '../img/miniatures/ultia/autres/unboxing_test.jpg' },
-  { id: 7, imageUrl: '../img/miniatures/ultia/autres/spiritcity.png' },
-  { id: 8, imageUrl: '../img/miniatures/ultia/autres/indieworld.jpg' },
-  { id: 9, imageUrl: '../img/miniatures/ultia/autres/picopark.jpg' },
-  { id: 10, imageUrl: '../img/miniatures/ultia/autres/deconnexion.jpg' },
-  { id: 11, imageUrl: '../img/miniatures/ultia/autres/pitchmeanindie.jpg' },
-  { id: 12, imageUrl: '../img/miniatures/ultia/autres/openroad.png' },
-  { id: 13, imageUrl: '../img/miniatures/ultia/autres/creation_entreprise.png' },
-  { id: 14, imageUrl: '../img/miniatures/ultia/autres/live_diy.jpg' }
-];
-
-
 
 const Miniature = () => {
-
   return (
     <div>
       <Header />
@@ -210,75 +134,39 @@ const Miniature = () => {
         <Container>
           <h2 className='title-section'>Miniatures pour Ultia</h2>
           <ListUl>
-            <ListItem><Icon/><StyledLink href="#cyberpunk">Cyberpunk</StyledLink></ListItem>
-            <ListItem><Icon/><StyledLink href="#ittakestwo">It Takes Two</StyledLink></ListItem>
-            <ListItem><Icon/><StyledLink href="#stardewvalley">Stardew Valley</StyledLink></ListItem>
-            <ListItem><Icon/><StyledLink href="#spiritfarer">Spiritfarer</StyledLink></ListItem>
-            <ListItem><Icon/><StyledLink href="#autres">Autres</StyledLink></ListItem>
-          </ListUl>
+          {categories.map(category => (
+            <ListItem key={category.id}>
+              <Icon />
+              <StyledLink href={`#${category.id}`}>{category.title}</StyledLink>
+            </ListItem>
+          ))}
+        </ListUl>
         </Container>
-        <h2 className='title-section' id="cyberpunk">Cyberpunk</h2>
-        <PortfolioWrapper>
-          {ultiaCyberpunk.map((project, index) => (
-            <ProjectCardWrapper key={project.id}  className={index === 0 ? 'large-image' : ''}>
-              <ProjectCardContent>
-                <ProjectCard project={project} />
-              </ProjectCardContent>
-            </ProjectCardWrapper>
-          ))}
-        </PortfolioWrapper>
+       
+        {categories.map(category => {
+        const isOdd = category.data.length % 2 !== 0;
 
-        <StyledHr></StyledHr>
-        
-        <h2 className='title-section' id="ittakestwo">It Takes Two</h2>
-        <PortfolioWrapper>
-          {ultiaIttakesTwo.map((project, index) => (
-            <ProjectCardWrapper key={project.id}  className={index === 0 ? 'large-image' : ''}>
-              <ProjectCardContent>
-                <ProjectCard project={project} />
-              </ProjectCardContent>
-            </ProjectCardWrapper>
-          ))}
-        </PortfolioWrapper>
+        console.log(category.title + " - "+ category.data.length);
+        return (
+          <React.Fragment key={category.id}>
+            <h2 className='title-section' id={category.id}>{category.title}</h2>
+            <PortfolioWrapper>
+              {category.data.map((project, index) => {
+                const isFirstAndOdd = index === 0 && isOdd;
 
-        <StyledHr></StyledHr>
-
-        <h2 className='title-section' id="stardewvalley">Stardew Valley</h2>
-        <PortfolioWrapper>
-          {ultiaStardew.map((project, index) => (
-            <ProjectCardWrapper key={project.id}>
-              <ProjectCardContent>
-                <ProjectCard project={project} />
-              </ProjectCardContent>
-            </ProjectCardWrapper>
-          ))}
-        </PortfolioWrapper>
-
-        <StyledHr></StyledHr>
-
-        <h2 className='title-section' id="spiritfarer">Spiritfarer</h2>
-        <PortfolioWrapper>
-          {ultiaSpiritfarer.map((project, index) => (
-            <ProjectCardWrapper key={project.id}>
-              <ProjectCardContent>
-                <ProjectCard project={project} />
-              </ProjectCardContent>
-            </ProjectCardWrapper>
-          ))}
-        </PortfolioWrapper>
-
-        <StyledHr></StyledHr>
-      
-        <h2 className='title-section' id="autres">Autres</h2>
-        <PortfolioWrapper>
-          {ultiaAutre.map((project) => (
-            <ProjectCardWrapper key={project.id}>
-              <ProjectCardContent>
-                <ProjectCard project={project} />
-              </ProjectCardContent>
-            </ProjectCardWrapper>
-          ))}
-        </PortfolioWrapper>
+                return (
+                  <ProjectCardWrapper key={project.id} className={isFirstAndOdd ? 'large-image' : ''}>
+                    <ProjectCardContent>
+                      <ProjectCard project={project} />
+                    </ProjectCardContent>
+                  </ProjectCardWrapper>
+                );
+              })}
+            </PortfolioWrapper>
+            <StyledHr />
+          </React.Fragment>
+        );
+      })}
 
       </SectionUltia>
       <ScrollToTop/>
