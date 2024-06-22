@@ -135,7 +135,7 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#banniere">Bannières Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#planning">Planning</StyledLink></ListItem>
-          <ListItem><Icon/><StyledLink href="#daz">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#da">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
         </ListUl>
         <TextU>Pour les commandes vous pouvez me contacter :</TextU>
         <ListUl>
