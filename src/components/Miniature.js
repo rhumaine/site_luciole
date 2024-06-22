@@ -145,8 +145,7 @@ const Miniature = () => {
        
         {categories.map(category => {
         const isOdd = category.data.length % 2 !== 0;
-
-        console.log(category.title + " - "+ category.data.length);
+        
         return (
           <React.Fragment key={category.id}>
             <h2 className='title-section' id={category.id}>{category.title}</h2>
