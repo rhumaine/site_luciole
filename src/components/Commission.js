@@ -174,7 +174,7 @@ const Commission = () => {
           <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée</ListItem>
         </ListUl>
         <Image src={commissionEmotes} alt="Exemple Emotes" />
-        <TextU id="badges">Badge Twitch / Discord :</TextU>
+        <TextU id="badges">Badge Twitch</TextU>
         <ListUl>
           <ListItem><Icon/>Badge avec changement de couleurs : 6€ l'unité</ListItem>
           <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>

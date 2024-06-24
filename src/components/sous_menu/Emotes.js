@@ -43,7 +43,7 @@ const Emotes = () => {
     return (
     <div>
         <Header />
-        <h2 className='title-section'>Twitch - Discord</h2>
+        <h2 className='title-section'>Emotes Twitch - Discord</h2>
         <StyledDiv>
           <Image src={emoteTwitch} alt="Émotes Twitch - Discord" />
         </StyledDiv>
