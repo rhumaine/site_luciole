@@ -140,7 +140,7 @@ const Commission = () => {
         <TextU>Pour les commandes vous pouvez me contacter :</TextU>
         <ListUl>
           <ListItem><Icon/>Par DM Twitter : <StyledLink href="https://twitter.com/Luuciiole" target="_blank">@Luuciiole</StyledLink></ListItem>
-          <ListItem><Icon/>Par mail :<StyledLink href="mailto:luuciiole.pro@gmail.com">luciole.pro@outlook.fr</StyledLink></ListItem>
+          <ListItem><Icon/>Par mail :<StyledLink href="mailto:luuciiole.pro@gmail.com">luuciiole.pro@gmail.com</StyledLink></ListItem>
         </ListUl>
         <StyledHr></StyledHr>
         <StyledTitle><strong>COMMENT SE DÉROULE LA COMMANDE</strong></StyledTitle>
