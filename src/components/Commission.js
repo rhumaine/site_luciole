@@ -89,7 +89,7 @@ const StyledTitle = styled.p `
   text-align: center;
   color: #320F13;
   font-family: 'Fredoka', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 1.75;
   font-weight: 400;
 `
