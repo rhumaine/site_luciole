@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import overlayRaton from '../../img/overlay/raton.jpg';
+import overlayRaton from '../../img/portfolio/overlay.jpg';
 
 const Image = styled.img`
   width: 100%;
