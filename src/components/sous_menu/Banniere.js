@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import banniere from '../../img/logoBannieres/bannieres.jpg';
+import banniere from '../../img/portfolio/banniere.jpg';
 
 const Image = styled.img`
   width: 100%;

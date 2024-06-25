@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import logo from '../../img/logoBannieres/logos.jpg';
+import logo from '../../img/portfolio/logo.jpg';
 
 const Image = styled.img`
   width: 100%;
