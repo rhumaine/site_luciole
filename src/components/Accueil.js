@@ -125,7 +125,7 @@ const Accueil = () => {
           <NavItem href="/portfolio">
             <Icon><FontAwesomeIcon icon={faPaintbrush} /></Icon> Portfolio
           </NavItem>
-          <NavItem href="mailto:luciole.pro@outlook.fr">
+          <NavItem href="mailto:luuciiole.pro@gmail.com">
             <Icon><FontAwesomeIcon icon={faEnvelope} /></Icon> Contact
           </NavItem>
         </Nav>

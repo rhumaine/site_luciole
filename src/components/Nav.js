@@ -262,7 +262,7 @@ function Nav() {
             <li><NavLink to="/banniere" onClick={handleLinkClick}>Bannière</NavLink></li>
           </ul>
         </li>
-        <li><NavLink to="mailto:luciole.pro@outlook.fr" onClick={handleLinkClick}>Contact</NavLink></li>
+        <li><NavLink to="mailto:luuciiole.pro@gmail.com" onClick={handleLinkClick}>Contact</NavLink></li>
       </UlNav>
       <ButtonNavBar onClick={handleShowLinks}>
         <SpanBurger></SpanBurger>
