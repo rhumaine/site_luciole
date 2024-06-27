@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import badgeTwitch from '../../img/portfolio/badges.jpg';
+import badgeTwitch from '../../img/portfolio/badges.png';
 
 const Image = styled.img`
   width: 100%;

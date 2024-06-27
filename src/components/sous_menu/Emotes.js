@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import emoteTwitch from '../../img/portfolio/emotes.jpg';
+import emoteTwitch from '../../img/portfolio/emotes.png';
 
 const Image = styled.img`
   width: 100%;

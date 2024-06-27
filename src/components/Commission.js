@@ -5,8 +5,8 @@ import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 
 import commissionMiniature from '../img/portfolio/miniature.jpg';
-import commissionEmotes from '../img/portfolio/emotes.jpg';
-import commissionBadges from '../img/portfolio/badges.jpg';
+import commissionEmotes from '../img/portfolio/emotes.png';
+import commissionBadges from '../img/portfolio/badges.png';
 import commissionOverlay from '../img/portfolio/overlay.jpg';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionLogo from '../img/portfolio/logo.jpg';
