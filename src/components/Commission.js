@@ -57,8 +57,6 @@ const StyledLink = styled.a`
 
 const Icon = styled.span`
   margin-right: 10px;
-  width: 24px; /* Ajustez la taille selon votre SVG */
-  height: 24px; /* Ajustez la taille selon votre SVG */
   display: inline-block;
   vertical-align: middle;
   border-radius: 2rem;
