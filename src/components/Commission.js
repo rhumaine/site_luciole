@@ -186,7 +186,8 @@ const Commission = () => {
         </ListUl>
         <TextU id="overlay">Overlay Twitch :</TextU>
         <ListUl>
-          <ListItem><Icon/>40€ l'unité</ListItem>
+          <ListItem><Icon/>35€ l'overlay simple</ListItem>
+          <ListItem><Icon/>50€ l'overlay animé</ListItem>
           <ListItem><Icon/>+ de 4 overlays : 20 € chaque overlay ajouté</ListItem>
         </ListUl>
       </Container>
