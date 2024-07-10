@@ -143,7 +143,7 @@ const Commission = () => {
         <StyledHr></StyledHr>
         <StyledTitle><strong>COMMENT SE DÉROULE LA COMMANDE</strong></StyledTitle>
         <ListUl>
-          <ListItem><Icon/>Avant toute commande, un acompte de 30% est requis à titre de sécurité. Les fichiers finis seront envoyés uniquement après réception du paiement total. Merci pour votre compréhension !</ListItem>
+          <ListItem><Icon/>Avant toute commande, un acompte de 50% est requis à titre de sécurité. Les fichiers finis seront envoyés uniquement après réception du paiement total. Merci pour votre compréhension !</ListItem>
         </ListUl>
         <TextU>Pour les miniatures :</TextU>
         <ListUl>
@@ -178,11 +178,11 @@ const Commission = () => {
           <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>
         </ListUl>
         <Image src={commissionBadges} alt="Exemple Badges" />
-        <TextU id="banniere">Bannière Twitch :</TextU>
+        <TextU id="banniere">Panneau :</TextU>
         <ListUl>
           <ListItem><Icon/>12€ l'unité</ListItem>
-          <ListItem><Icon/>4 bannières : 38€</ListItem>
-          <ListItem><Icon/>+ de 5 bannières : 10€ chaque bannière ajoutée</ListItem>
+          <ListItem><Icon/>4 panneaux : 38€</ListItem>
+          <ListItem><Icon/>+ de 5 panneaux : 10€ chaque panneau ajouté</ListItem>
         </ListUl>
         <TextU id="overlay">Overlay Twitch :</TextU>
         <ListUl>
