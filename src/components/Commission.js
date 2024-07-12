@@ -11,6 +11,7 @@ import commissionOverlay from '../img/portfolio/overlay.jpg';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionLogo from '../img/portfolio/logo.jpg';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
+import commissionPanneau from '../img/portfolio/panneaux_site.png';
 
 const Container = styled.section`
   width: 50%;
@@ -166,24 +167,32 @@ const Commission = () => {
         <Image src={commissionMiniature} alt="Exemple Miniature" />
         <TextU id="emotes">Émote :</TextU>
         <ListUl>
-          <ListItem><Icon/>15€ l'unité</ListItem>
-          <ListItem><Icon/>pack de 3 émotes : 40€</ListItem>
-          <ListItem><Icon/>pack de 5 émotes : 65€</ListItem>
-          <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée</ListItem>
+          <ListItem><Icon/>Émote statique : 12€ l'unité</ListItem>
+          <ListItem><Icon/>Émote animée : 20€ l'unité</ListItem>
+          <ListItem><Icon/>pack de 3 émotes statique : 32€ (+15€ pour les émotes animées)</ListItem>
+          <ListItem><Icon/>pack de 5 émotes : 50€ (+30€ pour les émotes animées)</ListItem>
+          <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée (+5€ pour les émotes animées)</ListItem>
         </ListUl>
         <Image src={commissionEmotes} alt="Exemple Emotes" />
+        <TextU id="badges">Points de chaine</TextU>
+        <ListUl>
+          <ListItem><Icon/>5€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 6 points de chaine : 25€</ListItem>
+        </ListUl>
         <TextU id="badges">Badge Twitch</TextU>
         <ListUl>
           <ListItem><Icon/>Badge avec changement de couleurs : 6€ l'unité</ListItem>
           <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 6 badges Twitch différents : 50€</ListItem>
         </ListUl>
         <Image src={commissionBadges} alt="Exemple Badges" />
         <TextU id="banniere">Panneau :</TextU>
         <ListUl>
-          <ListItem><Icon/>12€ l'unité</ListItem>
-          <ListItem><Icon/>4 panneaux : 38€</ListItem>
+          <ListItem><Icon/>14€ l'unité</ListItem>
+          <ListItem><Icon/>4 panneaux : 40€</ListItem>  
           <ListItem><Icon/>+ de 5 panneaux : 10€ chaque panneau ajouté</ListItem>
         </ListUl>
+        <Image src={commissionPanneau} alt="Exemple Panneaux" />
         <TextU id="overlay">Overlay Twitch :</TextU>
         <ListUl>
           <ListItem><Icon/>35€ l'overlay simple</ListItem>
