@@ -15,6 +15,7 @@ import Banniere from './components/sous_menu/Banniere';
 import GlobalStyles from './styles/GlobalStyles';
 import Planning from './components/sous_menu/Planning';
 import Pointschaine from './components/sous_menu/Pointschaine';
+import Panneau from './components/sous_menu/Panneau';
 
 function NavConditional() {
   const location = useLocation();
@@ -43,6 +44,7 @@ function App() {
         <Route path="/logo" element={<Logo/>} />
         <Route path="/banniere" element={<Banniere/>} />
         <Route path="/pointschaine" element={<Pointschaine/>} />
+        <Route path="/panneau" element={<Panneau/>} />
       </Routes>
     </Router>
   );
