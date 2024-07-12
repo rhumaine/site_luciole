@@ -131,6 +131,8 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#miniature">Miniatures Youtube</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#badges">Badges Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#pointchaine">Points de chaine</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#panneau">Panneaux</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#banniere">Bannières Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#planning">Planning</StyledLink></ListItem>
@@ -174,7 +176,7 @@ const Commission = () => {
           <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée (+5€ pour les émotes animées)</ListItem>
         </ListUl>
         <Image src={commissionEmotes} alt="Exemple Emotes" />
-        <TextU id="badges">Points de chaine</TextU>
+        <TextU id="pointchaine">Points de chaine</TextU>
         <ListUl>
           <ListItem><Icon/>5€ l'unité</ListItem>
           <ListItem><Icon/>Pack de 6 points de chaine : 25€</ListItem>
@@ -186,7 +188,7 @@ const Commission = () => {
           <ListItem><Icon/>Pack de 6 badges Twitch différents : 50€</ListItem>
         </ListUl>
         <Image src={commissionBadges} alt="Exemple Badges" />
-        <TextU id="banniere">Panneau :</TextU>
+        <TextU id="panneau">Panneau :</TextU>
         <ListUl>
           <ListItem><Icon/>14€ l'unité</ListItem>
           <ListItem><Icon/>4 panneaux : 40€</ListItem>  
