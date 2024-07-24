@@ -7,7 +7,7 @@ import ScrollToTop from './ScrollToTop';
 import commissionMiniature from '../img/portfolio/miniature.jpg';
 import commissionEmotes from '../img/portfolio/emotes.png';
 import commissionBadges from '../img/portfolio/badges.png';
-import commissionOverlay from '../img/portfolio/overlay.jpg';
+import commissionOverlay from '../img/portfolio/overlay.gif';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionLogo from '../img/portfolio/logo.jpg';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
@@ -20,6 +20,16 @@ const Container = styled.section`
     width:90%;
   }
 `;
+
+const ContainerGif = styled.section`
+  width: 75%;
+  margin: 0 auto;
+
+  @media (max-width: 991px){
+    width:90%;
+  }
+`;
+
 
 const TextU = styled.u`
   display: block;
@@ -189,8 +199,10 @@ const Commission = () => {
           <ListItem><Icon/>40€ l'unité</ListItem>
           <ListItem><Icon/>+ de 4 overlays : 20 € chaque overlay ajouté</ListItem>
         </ListUl>
-      </Container>
-      <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
+        </Container>
+      <ContainerGif>
+        <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
+      </ContainerGif>
       <Container>
         <TextU id="planning">Planning</TextU>
         <ListUl>
