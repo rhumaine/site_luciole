@@ -11,6 +11,7 @@ import commissionOverlay from '../img/portfolio/overlay.gif';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionLogo from '../img/portfolio/logo.jpg';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
+import commissionPanneau from '../img/portfolio/panneaux_site.png';
 
 const Container = styled.section`
   width: 50%;
@@ -140,6 +141,8 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#miniature">Miniatures Youtube</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#badges">Badges Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#pointchaine">Points de chaine</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#panneau">Panneaux</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#banniere">Bannières Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#planning">Planning</StyledLink></ListItem>
@@ -153,7 +156,7 @@ const Commission = () => {
         <StyledHr></StyledHr>
         <StyledTitle><strong>COMMENT SE DÉROULE LA COMMANDE</strong></StyledTitle>
         <ListUl>
-          <ListItem><Icon/>Avant toute commande, un acompte de 30% est requis à titre de sécurité. Les fichiers finis seront envoyés uniquement après réception du paiement total. Merci pour votre compréhension !</ListItem>
+          <ListItem><Icon/>Avant toute commande, un acompte de 50% est requis à titre de sécurité. Les fichiers finis seront envoyés uniquement après réception du paiement total. Merci pour votre compréhension !</ListItem>
         </ListUl>
         <TextU>Pour les miniatures :</TextU>
         <ListUl>
@@ -176,27 +179,36 @@ const Commission = () => {
         <Image src={commissionMiniature} alt="Exemple Miniature" />
         <TextU id="emotes">Émote :</TextU>
         <ListUl>
-          <ListItem><Icon/>15€ l'unité</ListItem>
-          <ListItem><Icon/>pack de 3 émotes : 40€</ListItem>
-          <ListItem><Icon/>pack de 5 émotes : 65€</ListItem>
-          <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée</ListItem>
+          <ListItem><Icon/>Émote statique : 12€ l'unité</ListItem>
+          <ListItem><Icon/>Émote animée : 20€ l'unité</ListItem>
+          <ListItem><Icon/>pack de 3 émotes statique : 32€ (+15€ pour les émotes animées)</ListItem>
+          <ListItem><Icon/>pack de 5 émotes : 50€ (+30€ pour les émotes animées)</ListItem>
+          <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée (+5€ pour les émotes animées)</ListItem>
         </ListUl>
         <Image src={commissionEmotes} alt="Exemple Emotes" />
+        <TextU id="pointchaine">Points de chaine</TextU>
+        <ListUl>
+          <ListItem><Icon/>5€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 6 points de chaine : 25€</ListItem>
+        </ListUl>
         <TextU id="badges">Badge Twitch</TextU>
         <ListUl>
           <ListItem><Icon/>Badge avec changement de couleurs : 6€ l'unité</ListItem>
           <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 6 badges Twitch différents : 50€</ListItem>
         </ListUl>
         <Image src={commissionBadges} alt="Exemple Badges" />
-        <TextU id="banniere">Bannière Twitch :</TextU>
+        <TextU id="panneau">Panneau :</TextU>
         <ListUl>
-          <ListItem><Icon/>12€ l'unité</ListItem>
-          <ListItem><Icon/>4 bannières : 38€</ListItem>
-          <ListItem><Icon/>+ de 5 bannières : 10€ chaque bannière ajoutée</ListItem>
+          <ListItem><Icon/>14€ l'unité</ListItem>
+          <ListItem><Icon/>4 panneaux : 40€</ListItem>  
+          <ListItem><Icon/>+ de 5 panneaux : 10€ chaque panneau ajouté</ListItem>
         </ListUl>
+        <Image src={commissionPanneau} alt="Exemple Panneaux" />
         <TextU id="overlay">Overlay Twitch :</TextU>
         <ListUl>
-          <ListItem><Icon/>40€ l'unité</ListItem>
+          <ListItem><Icon/>35€ l'overlay simple</ListItem>
+          <ListItem><Icon/>50€ l'overlay animé</ListItem>
           <ListItem><Icon/>+ de 4 overlays : 20 € chaque overlay ajouté</ListItem>
         </ListUl>
         </Container>
@@ -214,8 +226,8 @@ const Commission = () => {
         <TextU id="da">D.A</TextU>
         <ListUl>
           <ListItem><Icon/>Logo : 20€</ListItem>
-          <ListItem><Icon/>Bannière : 35€</ListItem> 
-          <ListItem><Icon/>Logo + bannière : 45€</ListItem> 
+          <ListItem><Icon/>Bannière : 25€</ListItem> 
+          <ListItem><Icon/>Logo + bannière : 35€</ListItem> 
         </ListUl>
         <Image src={commissionLogo} alt="Exemple Logo" />
         <Image src={commissionBanniere} alt="Exemple Banniere" />

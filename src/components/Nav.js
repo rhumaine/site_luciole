@@ -74,27 +74,27 @@ const UlNav = styled.ul`
       left: 50px;
     }
 
-     & li.open > ul {
+    & li.open > ul {
       display: block;
     }
 
     li {
-    position: relative;
+      position: relative;
 
-    ul {
-      display: none;
-      padding: 0;
-      list-style: none;
+      ul {
+        display: none;
+        padding: 0;
+        list-style: none;
 
-      li {
-        padding: 10px;
+        li {
+          padding: 10px;
 
-        a {
-          color: white;
+          a {
+            color: white;
+          }
         }
       }
     }
-  }
   }
 
   @media (min-width: 650px){
@@ -109,24 +109,24 @@ const UlNav = styled.ul`
     li {
     position: relative;
 
-    ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: rgba(50, 15, 19, 0.8);
-      padding: 0;
-      list-style: none;
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(50, 15, 19, 0.8);
+        padding: 0;
+        list-style: none;
 
-      li {
-        padding: 10px;
+        li {
+          padding: 10px;
 
-        a {
-          color: white;
+          a {
+            color: white;
+          }
         }
       }
     }
-  }
   }
 `;
 
@@ -249,8 +249,10 @@ function Nav() {
         <li className={openMenu === 'twitch' ? 'open' : ''}>
           <Anchor href="/" onClick={(e) => handleMenuClick('twitch', e)}>Twitch</Anchor>
           <ul>
-            <li><NavLink to="/emotes" onClick={handleLinkClick}>Emotes</NavLink></li>
             <li><NavLink to="/badges" onClick={handleLinkClick}>Badges</NavLink></li>
+            <li><NavLink to="/emotes" onClick={handleLinkClick}>Emotes</NavLink></li>
+            <li><NavLink to="/pointschaine" onClick={handleLinkClick}>Points de chaîne</NavLink></li>
+            <li><NavLink to="/panneau" onClick={handleLinkClick}>Panneaux</NavLink></li>
             <li><NavLink to="/overlay" onClick={handleLinkClick}>Overlay</NavLink></li>
             <li><NavLink to="/planning" onClick={handleLinkClick}>Planning</NavLink></li>
           </ul>
