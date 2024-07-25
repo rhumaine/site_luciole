@@ -143,7 +143,6 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#pointchaine">Points de chaine</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#panneau">Panneaux</StyledLink></ListItem>
-          <ListItem><Icon/><StyledLink href="#banniere">Bannières Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#planning">Planning</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#da">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
@@ -172,7 +171,7 @@ const Commission = () => {
         <StyledTitle><strong>Tarif</strong></StyledTitle>
         <TextU id="miniature">Miniature :</TextU>
         <ListUl>
-          <ListItem><Icon/>Miniature avec beaucoup de détails : 30€</ListItem>
+          <ListItem><Icon/>Miniature avec beaucoup de détails : 40€</ListItem>
           <ListItem><Icon/>Miniature simple : 20€</ListItem>
           <ListItem><Icon/>+ 5 miniatures : 10€ par miniature supplémentaire</ListItem>
         </ListUl>
