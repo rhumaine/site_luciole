@@ -225,8 +225,8 @@ const Commission = () => {
         <TextU id="da">D.A</TextU>
         <ListUl>
           <ListItem><Icon/>Logo : 20€</ListItem>
-          <ListItem><Icon/>Bannière : 25€</ListItem> 
-          <ListItem><Icon/>Logo + bannière : 35€</ListItem> 
+          <ListItem><Icon/>Bannière - Montage :25€</ListItem> 
+          <ListItem><Icon/>Bannière - Illustration :40€</ListItem> 
         </ListUl>
         <Image src={commissionLogo} alt="Exemple Logo" />
         <Image src={commissionBanniere} alt="Exemple Banniere" />
