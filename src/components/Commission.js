@@ -155,7 +155,7 @@ const Commission = () => {
         <StyledHr></StyledHr>
         <StyledTitle><strong>COMMENT SE DÉROULE LA COMMANDE</strong></StyledTitle>
         <ListUl>
-          <ListItem><Icon/>Avant toute commande, un acompte de 50% est requis à titre de sécurité. Les fichiers finis seront envoyés uniquement après réception du paiement total. Merci pour votre compréhension !</ListItem>
+          <ListItem><Icon/>Avant toute commande, la totalité du paiement sera demandée avant que je commence votre projet, à titre de sécurité. Merci pour votre compréhension !</ListItem>
         </ListUl>
         <TextU>Pour les miniatures :</TextU>
         <ListUl>
