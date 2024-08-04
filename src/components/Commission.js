@@ -191,7 +191,7 @@ const Commission = () => {
         </ListUl>
         <TextU id="badges">Badge Twitch</TextU>
         <ListUl>
-          <ListItem><Icon/>Badge avec changement de couleurs : 6€ l'unité</ListItem>
+          <ListItem><Icon/>Badge avec changement de couleurs : 10€ l'unité le premier badge puis +5€ chaque badge supplémentaire</ListItem>
           <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>
           <ListItem><Icon/>Pack de 6 badges Twitch différents : 50€</ListItem>
         </ListUl>
