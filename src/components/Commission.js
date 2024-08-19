@@ -155,7 +155,7 @@ const Commission = () => {
         <StyledHr></StyledHr>
         <StyledTitle><strong>COMMENT SE DÉROULE LA COMMANDE</strong></StyledTitle>
         <ListUl>
-          <ListItem><Icon/>Avant toute commande, un acompte de 50% est requis à titre de sécurité. Les fichiers finis seront envoyés uniquement après réception du paiement total. Merci pour votre compréhension !</ListItem>
+          <ListItem><Icon/>Avant toute commande, la totalité du paiement sera demandée avant que je commence votre projet, à titre de sécurité. Merci pour votre compréhension !</ListItem>
         </ListUl>
         <TextU>Pour les miniatures :</TextU>
         <ListUl>
@@ -171,9 +171,8 @@ const Commission = () => {
         <StyledTitle><strong>Tarif</strong></StyledTitle>
         <TextU id="miniature">Miniature :</TextU>
         <ListUl>
-          <ListItem><Icon/>Miniature avec beaucoup de détails : 40€</ListItem>
-          <ListItem><Icon/>Miniature simple : 20€</ListItem>
-          <ListItem><Icon/>+ 5 miniatures : 10€ par miniature supplémentaire</ListItem>
+          <ListItem><Icon/>Miniature : 20€ l'unité </ListItem>
+          <ListItem><Icon/>+ 5 miniatures dans le mois : 10€ par miniature supplémentaire</ListItem>
         </ListUl>
         <Image src={commissionMiniature} alt="Exemple Miniature" />
         <TextU id="emotes">Émote :</TextU>
@@ -192,7 +191,7 @@ const Commission = () => {
         </ListUl>
         <TextU id="badges">Badge Twitch</TextU>
         <ListUl>
-          <ListItem><Icon/>Badge avec changement de couleurs : 6€ l'unité</ListItem>
+          <ListItem><Icon/>Badge avec changement de couleurs : 10€ le premier badge puis +5€ chaque badge supplémentaire</ListItem>
           <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>
           <ListItem><Icon/>Pack de 6 badges Twitch différents : 50€</ListItem>
         </ListUl>
