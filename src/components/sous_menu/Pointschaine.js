@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import pointChaineTwitch from '../../img/portfolio/point_chaine.png';
+import pointChaineTwitch from '../../img/portfolio/pointchaine.png';
 
 const StyledDiv = styled.div`
   width: 50%; 
