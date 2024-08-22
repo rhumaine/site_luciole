@@ -7,6 +7,7 @@ import ScrollToTop from './ScrollToTop';
 import commissionMiniature from '../img/portfolio/miniature.jpg';
 import commissionEmotes from '../img/portfolio/emotes.png';
 import commissionBadges from '../img/portfolio/badges.png';
+import commissionPointChaine from '../img/portfolio/pointchaine.png';
 import commissionOverlay from '../img/portfolio/overlay.gif';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionLogo from '../img/portfolio/logo.jpg';
@@ -188,6 +189,7 @@ const Commission = () => {
           <ListItem><Icon/>5€ l'unité</ListItem>
           <ListItem><Icon/>Pack de 6 points de chaine : 25€</ListItem>
         </ListUl>
+        <Image src={commissionPointChaine} alt="Exemple Point de chaine" />
         <TextU id="badges">Badge Twitch</TextU>
         <ListUl>
           <ListItem><Icon/>Badge avec changement de couleurs : 10€ le premier badge puis +5€ chaque badge supplémentaire</ListItem>
