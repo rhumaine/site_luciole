@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import logo from '../img/logo_luciole.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importer FontAwesomeIcon
-import { faPaintbrush, faCheck, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Importer les icônes utilisées
+import { faPaintbrush, faCheck, faEnvelope, faBagShopping } from '@fortawesome/free-solid-svg-icons'; // Importer les icônes utilisées
 
 
 // Styles
@@ -127,6 +127,9 @@ const Accueil = () => {
           </NavItem>
           <NavItem href="mailto:luuciiole.pro@gmail.com">
             <Icon><FontAwesomeIcon icon={faEnvelope} /></Icon> Contact
+          </NavItem>
+          <NavItem href="https://www.etsy.com/fr/shop/LuuciioleCreations" target='_blank'>
+            <Icon><FontAwesomeIcon icon={faBagShopping} /></Icon> Ma boutique Etsy
           </NavItem>
         </Nav>
       </Container>
