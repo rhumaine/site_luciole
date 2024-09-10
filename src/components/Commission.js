@@ -172,7 +172,7 @@ const Commission = () => {
         <StyledTitle><strong>Tarif</strong></StyledTitle>
         <TextU id="miniature">Miniature :</TextU>
         <ListUl>
-          <ListItem><Icon/>Miniature : 10€ l'unité </ListItem>
+          <ListItem><Icon/>Miniature : 12€ l'unité </ListItem>
         </ListUl>
         <Image src={commissionMiniature} alt="Exemple Miniature" />
         <TextU id="emotes">Émote :</TextU>
@@ -199,9 +199,9 @@ const Commission = () => {
         <Image src={commissionBadges} alt="Exemple Badges" />
         <TextU id="panneau">Panneau :</TextU>
         <ListUl>
-          <ListItem><Icon/>14€ l'unité</ListItem>
-          <ListItem><Icon/>4 panneaux : 40€</ListItem>  
-          <ListItem><Icon/>+ de 5 panneaux : 10€ chaque panneau ajouté</ListItem>
+          <ListItem><Icon/>10€ l'unité</ListItem>
+          <ListItem><Icon/>4 panneaux : 30€</ListItem>  
+          <ListItem><Icon/>+ de 5 panneaux : 8€ chaque panneau ajouté</ListItem>
         </ListUl>
         <Image src={commissionPanneau} alt="Exemple Panneaux" />
         <TextU id="overlay">Overlay Twitch :</TextU>
@@ -219,7 +219,7 @@ const Commission = () => {
         <ListUl>
           <ListItem><Icon/>Template de planning : 40€</ListItem>
           <ListItem><Icon/>Mini Planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
-          <ListItem><Icon/>Visuels pour le planning : entre 7€ et 10€ l'unité</ListItem> 
+          <ListItem><Icon/>Update pour le planning : 15€ pour la mise à jour chaques semaines </ListItem> 
         </ListUl>
         <Image src={commissionPlanning} alt="Exemple Planning" />
         <TextU id="da">D.A</TextU>
