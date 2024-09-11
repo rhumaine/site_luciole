@@ -60,18 +60,20 @@ export const ultiaCyberpunk = [
   ];
   
   export const ultiaAutre = [
-    { id: 1, imageUrl: '../img/miniatures/ultia/autres/mariage.png' },
-    { id: 2, imageUrl: '../img/miniatures/ultia/autres/webtoon.png' },
-    { id: 3, imageUrl: '../img/miniatures/ultia/autres/perdu_paris.jpg' },
-    { id: 4, imageUrl: '../img/miniatures/ultia/autres/twitch_rivals.jpg' },
-    { id: 5, imageUrl: '../img/miniatures/ultia/autres/big_city.jpg' },
-    { id: 6, imageUrl: '../img/miniatures/ultia/autres/unboxing_test.jpg' },
-    { id: 7, imageUrl: '../img/miniatures/ultia/autres/spiritcity.png' },
-    { id: 8, imageUrl: '../img/miniatures/ultia/autres/indieworld.jpg' },
-    { id: 9, imageUrl: '../img/miniatures/ultia/autres/picopark.jpg' },
-    { id: 10, imageUrl: '../img/miniatures/ultia/autres/deconnexion.jpg' },
-    { id: 11, imageUrl: '../img/miniatures/ultia/autres/pitchmeanindie.jpg' },
-    { id: 12, imageUrl: '../img/miniatures/ultia/autres/openroad.png' },
-    { id: 13, imageUrl: '../img/miniatures/ultia/autres/creation_entreprise.png' },
-    { id: 14, imageUrl: '../img/miniatures/ultia/autres/live_diy.jpg' }
+    { id: 1, imageUrl: '../img/miniatures/ultia/autres/fanart_ete.png' },
+    { id: 2, imageUrl: '../img/miniatures/ultia/autres/mariage.png' },
+    { id: 3, imageUrl: '../img/miniatures/ultia/autres/Nifnif.png' },
+    { id: 4, imageUrl: '../img/miniatures/ultia/autres/webtoon.png' },
+    { id: 5, imageUrl: '../img/miniatures/ultia/autres/perdu_paris.jpg' },
+    { id: 6, imageUrl: '../img/miniatures/ultia/autres/twitch_rivals.jpg' },
+    { id: 7, imageUrl: '../img/miniatures/ultia/autres/big_city.jpg' },
+    { id: 8, imageUrl: '../img/miniatures/ultia/autres/unboxing_test.jpg' },
+    { id: 9, imageUrl: '../img/miniatures/ultia/autres/spiritcity.png' },
+    { id: 10, imageUrl: '../img/miniatures/ultia/autres/indieworld.jpg' },
+    { id: 11, imageUrl: '../img/miniatures/ultia/autres/picopark.jpg' },
+    { id: 12, imageUrl: '../img/miniatures/ultia/autres/deconnexion.jpg' },
+    { id: 13, imageUrl: '../img/miniatures/ultia/autres/pitchmeanindie.jpg' },
+    { id: 14, imageUrl: '../img/miniatures/ultia/autres/openroad.png' },
+    { id: 15, imageUrl: '../img/miniatures/ultia/autres/creation_entreprise.png' },
+    { id: 16, imageUrl: '../img/miniatures/ultia/autres/live_diy.jpg' }
   ];
