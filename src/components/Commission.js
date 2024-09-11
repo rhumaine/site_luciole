@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ChevronRight  from '../img/chevron_right.svg';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
+import transformHTML from './TransformHTML';
 
 import commissionMiniature from '../img/portfolio/miniature.jpg';
 import commissionEmotes from '../img/portfolio/emotes.png';
@@ -122,10 +123,28 @@ const ImageOut = styled.img`
 `;
 
 const Commission = () => {
+
+  const [content, setContent] = useState('');
+
+  useEffect(() => {
+    fetch('http://localhost:8000/api/commissions') // Remplacez par l'URL correcte
+      .then(response => response.json())
+      .then(data => {
+        // Suppose que vous avez une seule page avec 'commission'
+        const commissionPage = data.find(page => page.nom.toLowerCase().includes('commission'));
+        if (commissionPage) {
+          setContent(commissionPage.contenu);
+        }
+      })
+      .catch(error => console.error('Erreur lors de la récupération des données:', error));
+  }, []);
+
+
   return (
     <div>
       <Header />
       <Container>
+      <div>{transformHTML(content)}</div>
         <TextU>Ce que je propose :</TextU>
         <ListUl>
           <ListItem><Icon/><StyledLink href="#miniature">Miniatures Youtube</StyledLink></ListItem>
