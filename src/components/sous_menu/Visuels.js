@@ -40,7 +40,7 @@ const StyledDiv = styled.div`
 `;
 
 
-const Planning = () => {
+const Visuels = () => {
  
     return (
     <div>
@@ -56,4 +56,4 @@ const Planning = () => {
   );
 };
 
-export default Planning;
+export default Visuels;
