@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
 import planningTwitch from '../../img/portfolio/planning.jpg';
-import visuels1 from '../../img/portfolio/visuels1.png';
-import visuels2 from '../../img/portfolio/visuels2.png';
+import visuels1 from '../../img/portfolio/visuel1.png';
+import visuels2 from '../../img/portfolio/visuel2.png';
 
 const Image = styled.img`
   width: 100%;
