@@ -45,7 +45,7 @@ const Visuels = () => {
     return (
     <div>
         <Header />
-        <h2 className='title-section'>Planning</h2>
+        <h2 className='title-section'>Visuels</h2>
         <StyledDiv>
           <Image src={planningTwitch} alt="planning" />
           <Image src={visuels1} alt="visuel planning" />
