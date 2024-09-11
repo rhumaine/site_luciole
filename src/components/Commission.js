@@ -10,6 +10,7 @@ import commissionBadges from '../img/portfolio/badges.png';
 import commissionPointChaine from '../img/portfolio/pointchaine.png';
 import commissionOverlay from '../img/portfolio/overlay.gif';
 import commissionPlanning from '../img/portfolio/planning.jpg';
+import commissionVisuels1 from '../img/portfolio/visuels2.png';
 import commissionLogo from '../img/portfolio/logo.jpg';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
 import commissionPanneau from '../img/portfolio/panneaux_site.png';
@@ -222,6 +223,7 @@ const Commission = () => {
           <ListItem><Icon/>Update pour le planning : 15€ pour la mise à jour chaques semaines </ListItem> 
         </ListUl>
         <Image src={commissionPlanning} alt="Exemple Planning" />
+        <Image src={commissionVisuels1} alt="Exemple Visuels1" />
         <TextU id="da">D.A</TextU>
         <ListUl>
           <ListItem><Icon/>Logo : 20€</ListItem>
