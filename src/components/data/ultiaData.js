@@ -63,7 +63,7 @@ export const ultiaCyberpunk = [
     { id: 1, imageUrl: '../img/miniatures/ultia/autres/Miniature_BestOf_Zevent_2024.png' },
     { id: 2, imageUrl: '../img/miniatures/ultia/autres/Miniature_caravan_Sandwitch.png' },
     { id: 3, imageUrl: '../img/miniatures/ultia/autres/Miniature_Nifnif.png' },
-    { id: 4, imageUrl: '../img/miniatures/ultia/autres/Miniature_react_Bratz_Genie_et_Magie.jpg' },
+    { id: 4, imageUrl: '../img/miniatures/ultia/autres/Miniature_react_Bratz_Genie_et_Magie.png' },
     { id: 5, imageUrl: '../img/miniatures/ultia/autres/fanart_ete.png' },
     { id: 6, imageUrl: '../img/miniatures/ultia/autres/mariage.png' },
     { id: 7, imageUrl: '../img/miniatures/ultia/autres/webtoon.png' },
