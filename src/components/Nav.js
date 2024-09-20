@@ -254,7 +254,7 @@ function Nav() {
             <li><NavLink to="/pointschaine" onClick={handleLinkClick}>Points de chaîne</NavLink></li>
             <li><NavLink to="/panneau" onClick={handleLinkClick}>Panneaux</NavLink></li>
             <li><NavLink to="/overlay" onClick={handleLinkClick}>Overlay</NavLink></li>
-            <li><NavLink to="/planning" onClick={handleLinkClick}>Planning</NavLink></li>
+            <li><NavLink to="/visuels" onClick={handleLinkClick}>Visuels</NavLink></li>
           </ul>
         </li>
         <li className={openMenu === 'da' ? 'open' : ''}>

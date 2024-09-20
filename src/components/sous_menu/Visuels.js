@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
 import planningTwitch from '../../img/portfolio/planning.jpg';
+import visuels1 from '../../img/portfolio/visuel1.png';
+import visuels2 from '../../img/portfolio/visuel2.png';
 
 const Image = styled.img`
   width: 100%;
@@ -38,17 +40,20 @@ const StyledDiv = styled.div`
 `;
 
 
-const Planning = () => {
+const Visuels = () => {
  
     return (
     <div>
         <Header />
-        <h2 className='title-section'>Planning</h2>
+        <h2 className='title-section'>Visuels</h2>
         <StyledDiv>
           <Image src={planningTwitch} alt="planning" />
+          <Image src={visuels1} alt="visuel planning" />
+          <Image src={visuels2} alt="visuel zevent" />
+          
         </StyledDiv>
     </div>
   );
 };
 
-export default Planning;
+export default Visuels;

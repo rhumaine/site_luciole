@@ -10,6 +10,7 @@ import commissionBadges from '../img/portfolio/badges.png';
 import commissionPointChaine from '../img/portfolio/pointchaine.png';
 import commissionOverlay from '../img/portfolio/overlay.gif';
 import commissionPlanning from '../img/portfolio/planning.jpg';
+import commissionVisuels1 from '../img/portfolio/visuel2.png';
 import commissionLogo from '../img/portfolio/logo.jpg';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
 import commissionPanneau from '../img/portfolio/panneaux_site.png';
@@ -145,7 +146,7 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#pointchaine">Points de chaine</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#panneau">Panneaux</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
-          <ListItem><Icon/><StyledLink href="#planning">Planning</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#visuels">Visuels</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#da">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
         </ListUl>
         <TextU>Pour les commandes vous pouvez me contacter :</TextU>
@@ -172,7 +173,7 @@ const Commission = () => {
         <StyledTitle><strong>Tarif</strong></StyledTitle>
         <TextU id="miniature">Miniature :</TextU>
         <ListUl>
-          <ListItem><Icon/>Miniature : 10€ l'unité </ListItem>
+          <ListItem><Icon/>Miniature : 12 à 20€ l'unité </ListItem>
         </ListUl>
         <Image src={commissionMiniature} alt="Exemple Miniature" />
         <TextU id="emotes">Émote :</TextU>
@@ -199,9 +200,9 @@ const Commission = () => {
         <Image src={commissionBadges} alt="Exemple Badges" />
         <TextU id="panneau">Panneau :</TextU>
         <ListUl>
-          <ListItem><Icon/>14€ l'unité</ListItem>
-          <ListItem><Icon/>4 panneaux : 40€</ListItem>  
-          <ListItem><Icon/>+ de 5 panneaux : 10€ chaque panneau ajouté</ListItem>
+          <ListItem><Icon/>10€ l'unité</ListItem>
+          <ListItem><Icon/>4 panneaux : 30€</ListItem>  
+          <ListItem><Icon/>+ de 5 panneaux : 8€ chaque panneau ajouté</ListItem>
         </ListUl>
         <Image src={commissionPanneau} alt="Exemple Panneaux" />
         <TextU id="overlay">Overlay Twitch :</TextU>
@@ -215,13 +216,14 @@ const Commission = () => {
         <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
       </ContainerGif>
       <Container>
-        <TextU id="planning">Planning</TextU>
+        <TextU id="visuels">Visuels</TextU>
         <ListUl>
           <ListItem><Icon/>Template de planning : 40€</ListItem>
-          <ListItem><Icon/>Mini Planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
-          <ListItem><Icon/>Visuels pour le planning : entre 7€ et 10€ l'unité</ListItem> 
+          <ListItem><Icon/>Template de Mini planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
+          <ListItem><Icon/>Update pour le.s planning.s : 15 à 20€ pour la mise à jour chaques semaines </ListItem> 
         </ListUl>
         <Image src={commissionPlanning} alt="Exemple Planning" />
+        <Image src={commissionVisuels1} alt="Exemple Visuels1" />
         <TextU id="da">D.A</TextU>
         <ListUl>
           <ListItem><Icon/>Logo : 20€</ListItem>
