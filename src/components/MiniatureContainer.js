@@ -4,11 +4,11 @@ import Header from './Header';
 import { ultiaCyberpunk, ultiaIttakesTwo, ultiaSpiritfarer, ultiaStardew, ultiaAutre } from './data/ultiaData';
 
 const ultiaCategories = [
+  { id: 'autres', title: 'Divers', data: ultiaAutre },
   { id: 'cyberpunk', title: 'Cyberpunk', data: ultiaCyberpunk },
   { id: 'ittakestwo', title: 'It Takes Two', data: ultiaIttakesTwo },
   { id: 'stardewvalley', title: 'Stardew Valley', data: ultiaStardew },
-  { id: 'spiritfarer', title: 'Spiritfarer', data: ultiaSpiritfarer },
-  { id: 'autres', title: 'Autres', data: ultiaAutre },
+  { id: 'spiritfarer', title: 'Spiritfarer', data: ultiaSpiritfarer }
 ];
 
 const MiniatureContainer = () => {
