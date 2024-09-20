@@ -219,8 +219,8 @@ const Commission = () => {
         <TextU id="visuels">Visuels</TextU>
         <ListUl>
           <ListItem><Icon/>Template de planning : 40€</ListItem>
-          <ListItem><Icon/>Mini planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
-          <ListItem><Icon/>Update pour le planning : 15€ pour la mise à jour chaques semaines </ListItem> 
+          <ListItem><Icon/>Template de Mini planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
+          <ListItem><Icon/>Update pour le.s planning.s : 15 à 20€ pour la mise à jour chaques semaines </ListItem> 
         </ListUl>
         <Image src={commissionPlanning} alt="Exemple Planning" />
         <Image src={commissionVisuels1} alt="Exemple Visuels1" />
