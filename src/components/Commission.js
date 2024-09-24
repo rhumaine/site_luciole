@@ -173,43 +173,42 @@ const Commission = () => {
         <StyledTitle><strong>Tarif</strong></StyledTitle>
         <TextU id="miniature">Miniature :</TextU>
         <ListUl>
-          <ListItem><Icon/>Miniature : 12 à 20€ l'unité </ListItem>
+          <ListItem><Icon/>Miniature : 15 à 25€ l'unité </ListItem>
         </ListUl>
         <Image src={commissionMiniature} alt="Exemple Miniature" />
         <TextU id="emotes">Émote :</TextU>
         <ListUl>
-          <ListItem><Icon/>Émote statique : 12€ l'unité</ListItem>
-          <ListItem><Icon/>Émote animée : 20€ l'unité</ListItem>
-          <ListItem><Icon/>pack de 3 émotes statique : 32€ (+15€ pour les émotes animées)</ListItem>
-          <ListItem><Icon/>pack de 5 émotes : 50€ (+30€ pour les émotes animées)</ListItem>
-          <ListItem><Icon/>+ de 5 émotes : 10€ chaque émote ajoutée (+5€ pour les émotes animées)</ListItem>
+          <ListItem><Icon/>Émote statique : 18€ l'unité</ListItem>
+          <ListItem><Icon/>pack de 3 émotes statique : 48€</ListItem>
+          <ListItem><Icon/>pack de 5 émotes : 80€</ListItem>
+          <ListItem><Icon/>+ de 5 émotes : 12€ chaque émote ajoutée</ListItem>
         </ListUl>
         <Image src={commissionEmotes} alt="Exemple Emotes" />
         <TextU id="pointchaine">Points de chaine</TextU>
         <ListUl>
-          <ListItem><Icon/>5€ l'unité</ListItem>
-          <ListItem><Icon/>Pack de 6 points de chaine : 25€</ListItem>
+          <ListItem><Icon/>8€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 6 points de chaine : 38€</ListItem>
         </ListUl>
         <Image src={commissionPointChaine} alt="Exemple Point de chaine" />
         <TextU id="badges">Badge Twitch</TextU>
         <ListUl>
-          <ListItem><Icon/>Badge avec changement de couleurs : 10€ le premier badge puis +5€ chaque badge supplémentaire</ListItem>
-          <ListItem><Icon/>Badge différent : 10€ l'unité</ListItem>
-          <ListItem><Icon/>Pack de 6 badges Twitch différents : 50€</ListItem>
+          <ListItem><Icon/>Badge avec changement de couleurs : 12€ le premier badge puis +5€ chaque badge supplémentaire</ListItem>
+          <ListItem><Icon/>Badge différent : 12€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 6 badges Twitch différents : 65€</ListItem>
         </ListUl>
         <Image src={commissionBadges} alt="Exemple Badges" />
         <TextU id="panneau">Panneau :</TextU>
         <ListUl>
           <ListItem><Icon/>10€ l'unité</ListItem>
-          <ListItem><Icon/>4 panneaux : 30€</ListItem>  
+          <ListItem><Icon/>4 panneaux : 35€</ListItem>  
           <ListItem><Icon/>+ de 5 panneaux : 8€ chaque panneau ajouté</ListItem>
         </ListUl>
         <Image src={commissionPanneau} alt="Exemple Panneaux" />
         <TextU id="overlay">Overlay Twitch :</TextU>
         <ListUl>
-          <ListItem><Icon/>35€ l'overlay simple</ListItem>
-          <ListItem><Icon/>50€ l'overlay animé</ListItem>
-          <ListItem><Icon/>+ de 4 overlays : 20 € chaque overlay ajouté</ListItem>
+          <ListItem><Icon/>40€ l'overlay simple</ListItem>
+          <ListItem><Icon/>60€ l'overlay animé</ListItem>
+          <ListItem><Icon/>+ de 4 overlays : 30 € chaque overlay ajouté</ListItem>
         </ListUl>
         </Container>
       <ContainerGif>
@@ -218,7 +217,7 @@ const Commission = () => {
       <Container>
         <TextU id="visuels">Visuels</TextU>
         <ListUl>
-          <ListItem><Icon/>Template de planning : 50€</ListItem>
+          <ListItem><Icon/>Template de planning : 60€</ListItem>
           <ListItem><Icon/>Template de Mini planning (pour les RS ou en dessous du Stream par exemple) : 20€</ListItem> 
           <ListItem><Icon/>Update pour le.s planning.s : 15 à 25€ pour la mise à jour chaques semaines </ListItem> 
 
@@ -228,7 +227,7 @@ const Commission = () => {
         <Image src={commissionVisuels1} alt="Exemple Visuels1" />
         <TextU id="da">D.A</TextU>
         <ListUl>
-          <ListItem><Icon/>Logo : 20€</ListItem>
+          <ListItem><Icon/>création d'une DA complète : 10€ par heure</ListItem>
           <ListItem><Icon/>Bannière - Montage :25€</ListItem> 
           <ListItem><Icon/>Bannière - Illustration :40€</ListItem> 
         </ListUl>
