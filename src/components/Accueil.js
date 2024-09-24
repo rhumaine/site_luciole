@@ -128,8 +128,8 @@ const Accueil = () => {
           <NavItem href="mailto:luuciiole.pro@gmail.com">
             <Icon><FontAwesomeIcon icon={faEnvelope} /></Icon> Contact
           </NavItem>
-          <NavItem href="https://www.etsy.com/fr/shop/LuuciioleCreations" target='_blank'>
-            <Icon><FontAwesomeIcon icon={faBagShopping} /></Icon> Ma boutique Etsy
+          <NavItem href="https://ko-fi.com/luuciiole" target='_blank'>
+            <Icon><FontAwesomeIcon icon={faBagShopping} /></Icon> Ma boutique
           </NavItem>
         </Nav>
       </Container>
