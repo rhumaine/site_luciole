@@ -253,7 +253,6 @@ function Nav() {
             <li><NavLink to="/emotes" onClick={handleLinkClick}>Emotes</NavLink></li>
             <li><NavLink to="/pointschaine" onClick={handleLinkClick}>Points de chaîne</NavLink></li>
             <li><NavLink to="/panneau" onClick={handleLinkClick}>Panneaux</NavLink></li>
-            <li><NavLink to="/overlay" onClick={handleLinkClick}>Overlay</NavLink></li>
             <li><NavLink to="/visuels" onClick={handleLinkClick}>Visuels</NavLink></li>
           </ul>
         </li>

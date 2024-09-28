@@ -145,7 +145,6 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#pointchaine">Points de chaine</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#panneau">Panneaux</StyledLink></ListItem>
-          <ListItem><Icon/><StyledLink href="#overlay">Overlays Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#visuels">Visuels</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#da">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
         </ListUl>
@@ -204,16 +203,7 @@ const Commission = () => {
           <ListItem><Icon/>+ de 5 panneaux : 8€ chaque panneau ajouté</ListItem>
         </ListUl>
         <Image src={commissionPanneau} alt="Exemple Panneaux" />
-        <TextU id="overlay">Overlay Twitch :</TextU>
-        <ListUl>
-          <ListItem><Icon/>40€ l'overlay simple</ListItem>
-          <ListItem><Icon/>60€ l'overlay animé</ListItem>
-          <ListItem><Icon/>+ de 4 overlays : 30 € chaque overlay ajouté</ListItem>
-        </ListUl>
-        </Container>
-      <ContainerGif>
-        <ImageOut src={commissionOverlay} alt="Exemple Overlay" />
-      </ContainerGif>
+      </Container>
       <Container>
         <TextU id="visuels">Visuels</TextU>
         <ListUl>
