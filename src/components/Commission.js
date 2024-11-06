@@ -8,6 +8,7 @@ import commissionMiniature from '../img/portfolio/miniature.jpg';
 import commissionEmotes from '../img/portfolio/emotes.png';
 import commissionBadges from '../img/portfolio/badges.png';
 import commissionPlanning from '../img/portfolio/planning.jpg';
+import commissionOverlay from '../img/portfolio/overlay.jpg';
 import commissionVisuels1 from '../img/portfolio/visuel2.png';
 import commissionLogo from '../img/portfolio/logo.jpg';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
@@ -22,14 +23,14 @@ const Container = styled.section`
   }
 `;
 
-const ContainerGif = styled.section`
+/*const ContainerGif = styled.section`
   width: 75%;
   margin: 0 auto;
 
   @media (max-width: 991px){
     width:90%;
   }
-`;
+`;*/
 
 
 const TextU = styled.u`
@@ -115,7 +116,7 @@ const Image = styled.img`
   }
 `;
 
-const ImageOut = styled.img`
+/*const ImageOut = styled.img`
   display:block;
   width: 60%;
   margin:0 auto;
@@ -129,7 +130,7 @@ const ImageOut = styled.img`
   @media (max-width: 768px){
     width:90%;
   }
-`;
+`;*/
 
 const Commission = () => {
   return (
@@ -142,6 +143,7 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#badges">Badges Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#panneau">Panneaux</StyledLink></ListItem>
+          <ListItem><Icon/><StyledLink href="#overlay">Overlay</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#visuels">Visuels</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#da">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
         </ListUl>
@@ -194,6 +196,13 @@ const Commission = () => {
           <ListItem><Icon/>+ de 5 panneaux : 8€ chaque panneau ajouté</ListItem>
         </ListUl>
         <Image src={commissionPanneau} alt="Exemple Panneaux" />
+        <TextU id="overlay">Overlay Twitch :</TextU>
+        <ListUl>
+          <ListItem><Icon/>Overlay statique : 40€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 2 Overlays (début et fin) avec un petit changement (exemple : le titre est différent ou un petit élément est différent ) : 60€</ListItem>  
+          <ListItem><Icon/>Pack de 4 overlay : 130 €</ListItem>
+        </ListUl>
+        <Image src={commissionOverlay} alt="Exemple Overlay" />
       </Container>
       <Container>
         <TextU id="visuels">Visuels</TextU>

@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Image = styled.img`
+/*const Image = styled.img`
   width: 100%;
   margin-bottom:50px;
   transition: transform 0.3s ease-in-out;
@@ -18,7 +18,7 @@ const Image = styled.img`
    &:hover {
     transform: scale(1.1);
   }
-`;
+`;*/
 
 const Pointschaine = () => {
  

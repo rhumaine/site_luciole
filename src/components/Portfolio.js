@@ -103,8 +103,8 @@ const Portfolio = () => {
           <NavItem href="/overlay">
              Twitch Overlay
           </NavItem>
-          <NavItem href="/planning">
-             Twitch Planning
+          <NavItem href="/visuels">
+             Twitch Visuels
           </NavItem>
           <NavItem href="/logo">
              D.A Logo
