@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
 import overlayRaton from '../../img/portfolio/overlay.jpg';
-import overlayAnimee from '../../img/portfolio/overlay.gif';
-
 const Image = styled.img`
   width: 100%;
   margin-bottom:50px;
@@ -47,7 +45,6 @@ const Overlay = () => {
         <h2 className='title-section'>Overlay</h2>
         <StyledDiv>
           <Image src={overlayRaton} alt="Overlay Raton" />
-          <Image src={overlayAnimee} alt="Overlay animé" />
         </StyledDiv>
     </div>
   );
