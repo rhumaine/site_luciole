@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
-import pointChaineTwitch from '../../img/portfolio/pointchaine.png';
-
 const StyledDiv = styled.div`
   width: 50%; 
   margin: 10px auto 30px auto; 
@@ -29,7 +27,6 @@ const Pointschaine = () => {
         <Header />
         <h2 className='title-section'>Points de chaine</h2>
         <StyledDiv>
-            <Image src={pointChaineTwitch} alt="point de chaine" />
         </StyledDiv>
     </div>
   );
