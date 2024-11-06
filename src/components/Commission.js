@@ -200,7 +200,7 @@ const Commission = () => {
         <ListUl>
           <ListItem><Icon/>Overlay statique : 40€ l'unité</ListItem>
           <ListItem><Icon/>Pack de 2 Overlays (début et fin) avec un petit changement (exemple : le titre est différent ou un petit élément est différent ) : 60€</ListItem>  
-          <ListItem><Icon/>Pack de 4 overlay : 130 €</ListItem>
+          <ListItem><Icon/>Pack de 4 overlays : 130 €</ListItem>
         </ListUl>
         <Image src={commissionOverlay} alt="Exemple Overlay" />
       </Container>
