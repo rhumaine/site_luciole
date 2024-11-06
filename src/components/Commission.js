@@ -182,8 +182,12 @@ const Commission = () => {
         <Image src={commissionEmotes} alt="Exemple Emotes" />
         <TextU id="pointchaine">Points de chaine</TextU>
         <ListUl>
-          <ListItem><Icon/>8€ l'unité</ListItem>
-          <ListItem><Icon/>Pack de 6 points de chaine : 38€</ListItem>
+        <Image src={commissionPointChaine} alt="Exemple Point de chaine" />
+        <TextU id="badges">Badge Twitch</TextU>
+        <ListUl>
+          <ListItem><Icon/>Badge avec changement de couleurs : 12€ le premier badge puis +5€ chaque badge supplémentaire</ListItem>
+          <ListItem><Icon/>Badge différent : 12€ l'unité</ListItem>
+          <ListItem><Icon/>Pack de 6 badges Twitch différents : 65€</ListItem>
         </ListUl>
         <Image src={commissionBadges} alt="Exemple Badges" />
         <TextU id="panneau">Panneau :</TextU>
