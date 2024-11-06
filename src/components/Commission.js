@@ -7,7 +7,6 @@ import ScrollToTop from './ScrollToTop';
 import commissionMiniature from '../img/portfolio/miniature.jpg';
 import commissionEmotes from '../img/portfolio/emotes.png';
 import commissionBadges from '../img/portfolio/badges.png';
-import commissionOverlay from '../img/portfolio/overlay.gif';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionVisuels1 from '../img/portfolio/visuel2.png';
 import commissionLogo from '../img/portfolio/logo.jpg';
