@@ -7,7 +7,6 @@ import ScrollToTop from './ScrollToTop';
 import commissionMiniature from '../img/portfolio/miniature.jpg';
 import commissionEmotes from '../img/portfolio/emotes.png';
 import commissionBadges from '../img/portfolio/badges.png';
-import commissionPointChaine from '../img/portfolio/pointchaine.png';
 import commissionOverlay from '../img/portfolio/overlay.gif';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionVisuels1 from '../img/portfolio/visuel2.png';
@@ -143,7 +142,6 @@ const Commission = () => {
           <ListItem><Icon/><StyledLink href="#miniature">Miniatures Youtube</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#badges">Badges Twitch</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#emotes">Émotes (textes ou illustrations)</StyledLink></ListItem>
-          <ListItem><Icon/><StyledLink href="#pointchaine">Points de chaine</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#panneau">Panneaux</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#visuels">Visuels</StyledLink></ListItem>
           <ListItem><Icon/><StyledLink href="#da">DA : Conception d’identité visuelle et graphique (logo, bannière ...)</StyledLink></ListItem>
@@ -187,13 +185,6 @@ const Commission = () => {
         <ListUl>
           <ListItem><Icon/>8€ l'unité</ListItem>
           <ListItem><Icon/>Pack de 6 points de chaine : 38€</ListItem>
-        </ListUl>
-        <Image src={commissionPointChaine} alt="Exemple Point de chaine" />
-        <TextU id="badges">Badge Twitch</TextU>
-        <ListUl>
-          <ListItem><Icon/>Badge avec changement de couleurs : 12€ le premier badge puis +5€ chaque badge supplémentaire</ListItem>
-          <ListItem><Icon/>Badge différent : 12€ l'unité</ListItem>
-          <ListItem><Icon/>Pack de 6 badges Twitch différents : 65€</ListItem>
         </ListUl>
         <Image src={commissionBadges} alt="Exemple Badges" />
         <TextU id="panneau">Panneau :</TextU>
