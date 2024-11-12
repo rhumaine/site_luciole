@@ -172,8 +172,8 @@ const Commission = () => {
         <TextU id="miniature">Miniature :</TextU>
         <ListUl>
           <ListItem><Icon/>Miniature : 15€ l'unité </ListItem>
-          <ListItem><Icon/>pack de 3 Miniatures : 30€ l'unité </ListItem>
-          <ListItem><Icon/>pack de 5 Miniatures : 55€ l'unité </ListItem>
+          <ListItem><Icon/>pack de 3 Miniatures : 30€ </ListItem>
+          <ListItem><Icon/>pack de 5 Miniatures : 55€ </ListItem>
           <ListItem><Icon/>+ de 5 Miniatures : 10€ l'unité </ListItem>
         </ListUl>
         <Image src={commissionMiniature} alt="Exemple Miniature" />
