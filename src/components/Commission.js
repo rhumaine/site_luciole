@@ -36,7 +36,7 @@ const Container = styled.section`
 const TextU = styled.u`
   display: block;
   text-align: center;
-  color: #320F13;
+  color: #ffd5b6;
   font-family: 'Fredoka', sans-serif;
   font-size: 1.6em;
   line-height: 1.75;
@@ -56,7 +56,7 @@ const ListItem = styled.li`
   color:#320F13;
   
   & a:hover{
-    color: #ED6171;
+    color: #ffd5b6;
   }
 `;
 
@@ -91,13 +91,13 @@ const StyledHr = styled.hr`
     content: '';
     display: block;
     width: 100%;
-    border-top: dotted 5px #ff6a6a;
+    border-top: dotted 5px #ffd5b6;
     height: 4px;
   }
 ` 
 const StyledTitle = styled.p `
   text-align: center;
-  color: #320F13;
+  color: #ffd5b6;
   font-family: 'Fredoka', sans-serif;
   font-size: 1.5em;
   line-height: 1.75;

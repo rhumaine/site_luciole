@@ -32,7 +32,7 @@ const TitleHeader = styled.h2`
   padding: 1rem;
   font-family: 'Fredoka', cursive;
   text-align: center;
-  color: #320F13;
+  color: #ffd5b6;
   font-size: 1.875em;
   line-height: 1.75;
   font-weight: 800;
@@ -46,7 +46,7 @@ const DivLogo = styled.div`
   width: 13.875rem;
   height: 13.5rem;
   border-radius: 1.3rem;
-  border-color: #320F13;
+  border-color: #ffd5b6;
   border-style: solid;
   border-width: 4px;
   margin: 20px auto;

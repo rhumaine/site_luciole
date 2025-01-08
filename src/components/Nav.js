@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Navbar = styled.nav`
     margin: 50px auto;
     padding: 1rem;
-    background-color: rgba(50, 15, 19, 0.8);
+    background-color: #ffd5b6;
     color: white;
     z-index: 1000;
     font-family: 'Fredoka', sans-serif;
@@ -114,7 +114,7 @@ const UlNav = styled.ul`
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: rgba(50, 15, 19, 0.8);
+        background-color: #ffd5b6;
         padding: 0;
         list-style: none;
 
@@ -142,7 +142,7 @@ const NavLink = styled(RouterNavLink)`
   }
 
   &.active {
-    color: #FD8686; /* Couleur différente pour le lien actif */
+    color: #72076A; /* Couleur différente pour le lien actif */
   }
 
   @media (max-width: 649px) {
