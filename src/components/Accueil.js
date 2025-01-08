@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import logo from '../img/logo_luciole.jpg';
+import logo from '../img/logo_luciole.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importer FontAwesomeIcon
 import { faPaintbrush, faCheck, faEnvelope, faBagShopping } from '@fortawesome/free-solid-svg-icons'; // Importer les icônes utilisées
 
@@ -43,7 +43,7 @@ const ContainerLogo = styled.div`
   width: 21.875rem;
   height: 21.5rem;
   border-radius: 1.875rem;
-  border-color: #320F13;
+  border-color: #FFD5B6;
   border-style: solid;
   border-width: 4px;
   margin-left: 20px;
@@ -86,13 +86,13 @@ const Nav = styled.nav`
 `;
 
 const NavItem = styled.a`
-  font-family: 'Arial', sans-serif;
-  color: #320F13;
+  font-family: 'Fredoka One', cursive;
+  color: #72076A;
   font-size: 1.5rem;
   text-decoration: none;
   margin-top: 1rem; /* Espacement entre les éléments de navigation */
   border-radius: 3rem;
-  border-color: #320F13;
+  border-color: #FFD5B6;
   border-style: solid;
   border-width: 4px;
   font-weight:bold;
@@ -101,8 +101,8 @@ const NavItem = styled.a`
 
   &:hover {
     transform: scale(1.0775); /* Agrandissement au survol */
-    border-color: #ED6171 !important;
-    color: #ED6171 !important;
+    /*border-color: #ED6171 !important;*/
+    color: #FFD5B6 !important;
   }
 `;
 

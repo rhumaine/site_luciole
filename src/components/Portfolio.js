@@ -61,12 +61,12 @@ const NavItem = styled.a`
   height:120px;
   line-height:120px;
   font-family: 'Arial', sans-serif;
-  color: #320F13;
+  color: #72076A;
   font-size: 1.5rem;
   text-decoration: none;
   margin-top: 1rem; /* Espacement entre les éléments de navigation */
   border-radius: 3rem;
-  border-color: #320F13;
+  border-color: #FFD5B6;
   border-style: solid;
   border-width: 4px;
   font-weight:bold;
@@ -75,8 +75,8 @@ const NavItem = styled.a`
 
   &:hover {
     transform: scale(1.0775); /* Agrandissement au survol */
-    border-color: #ED6171 !important;
-    color: #ED6171 !important;
+    border-color: #FFD5B6 !important;
+    color: #FFD5B6 !important;
   }
 
   @media (max-width: 991px){

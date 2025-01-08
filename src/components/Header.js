@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useLocation } from 'react-router-dom';
-import logo from '../img/logo_luciole.jpg';
+import logo from '../img/logo_luciole.png';
 
 
 const fadeIn = keyframes`
