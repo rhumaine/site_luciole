@@ -32,7 +32,7 @@ const TitleHeader = styled.h2`
   padding: 1rem;
   font-family: 'Fredoka', cursive;
   text-align: center;
-  color: #ffd5b6;
+  color: rgb(65 3 60);
   font-size: 1.875em;
   line-height: 1.75;
   font-weight: 800;

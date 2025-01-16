@@ -36,7 +36,7 @@ const Container = styled.section`
 const TextU = styled.u`
   display: block;
   text-align: center;
-  color: #ffd5b6;
+  color: rgb(65 3 60);
   font-family: 'Fredoka', sans-serif;
   font-size: 1.6em;
   line-height: 1.75;
@@ -97,7 +97,7 @@ const StyledHr = styled.hr`
 ` 
 const StyledTitle = styled.p `
   text-align: center;
-  color: #ffd5b6;
+  color: rgb(65 3 60);
   font-family: 'Fredoka', sans-serif;
   font-size: 1.5em;
   line-height: 1.75;
