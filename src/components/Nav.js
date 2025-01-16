@@ -114,7 +114,7 @@ const UlNav = styled.ul`
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #ffd5b6;
+        background-color: #c558bc;
         padding: 0;
         list-style: none;
 
