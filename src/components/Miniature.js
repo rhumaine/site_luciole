@@ -76,7 +76,7 @@ const ListItem = styled.li`
 `;
 
 const StyledLink = styled.a`
-  color: #320f13;
+  color: #000;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: border-bottom-color 0.3s ease-in-out;
