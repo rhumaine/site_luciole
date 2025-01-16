@@ -68,7 +68,7 @@ const ListItem = styled.li`
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  color: #320f13;
+  color: #000;
 
   & a:hover {
     color: #ed6171;
