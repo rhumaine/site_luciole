@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Navbar = styled.nav`
     margin: 50px auto;
     padding: 1rem;
-    background-color: #ffd5b6;
+    background-color: #c558bc;
     color: white;
     z-index: 1000;
     font-family: 'Fredoka', sans-serif;
