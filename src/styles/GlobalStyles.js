@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Fredoka', cursive;
-    background: url(${backgroundImage}),linear-gradient(75deg, #FFD5B6 0%, #72076A 100%);
+    background: url(${backgroundImage}),linear-gradient(80deg, #FFD5B6 0%, #72076A 100%);
     background-size: contain;
     background-position: center, 0% 0%;
     font-size: 22px;
