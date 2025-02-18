@@ -81,7 +81,4 @@ export const ultiaCyberpunk = [
     { id: 3, imageUrl: '../img/miniatures/ultia/autres/pitchmeanindie.jpg' },
     { id: 2, imageUrl: '../img/miniatures/ultia/autres/openroad.png' },
     { id: 1, imageUrl: '../img/miniatures/ultia/autres/creation_entreprise.png' },
-  ].reverse().map((item, index, arr) => ({
-    id: arr.length - index,
-    imageUrl: item.imageUrl
-  }));
+  ];
