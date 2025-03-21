@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
 import planningTwitch from '../../img/portfolio/planning.jpg';
-import visuels1 from '../../img/portfolio/visuel1.png';
-import visuels2 from '../../img/portfolio/visuel2.png';
+import visuel from '../../img/portfolio/visuel.png';
 
 const Image = styled.img`
   width: 100%;
@@ -48,8 +47,7 @@ const Visuels = () => {
         <h2 className='title-section'>Visuels</h2>
         <StyledDiv>
           <Image src={planningTwitch} alt="planning" />
-          <Image src={visuels1} alt="visuel planning" />
-          <Image src={visuels2} alt="visuel zevent" />
+          <Image src={visuel} alt="visuel zlan" />
           
         </StyledDiv>
     </div>

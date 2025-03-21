@@ -9,7 +9,7 @@ import commissionEmotes from '../img/portfolio/emotes.png';
 import commissionBadges from '../img/portfolio/badges.png';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionOverlay from '../img/portfolio/overlay.jpg';
-import commissionVisuels1 from '../img/portfolio/visuel2.png';
+import commissionVisuels1 from '../img/portfolio/visuel.png';
 import commissionLogo from '../img/portfolio/logo.jpg';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
 import commissionPanneau from '../img/portfolio/panneaux_site.png';
