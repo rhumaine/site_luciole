@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate  } from 'react-router-dom';
 import Nav from './components/Nav';
 
 // Les pages
@@ -35,6 +35,7 @@ function App() {
       <NavConditional />
       <Routes>
         <Route path="/" element={<Accueil/>} />
+        <Route path="/miniature" element={<Navigate replace to="/miniature/ultia" />} />
         <Route path="/miniature/:personId" element={<Miniature />} />
         <Route path="/commission" element={<Commission/>} />
         <Route path="/portfolio" element={<Portfolio/>} />
