@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useParams } from 'react-router-dom';
 import ProjectCard from './ProjectCard';
 import ScrollToTop from './ScrollToTop';
 import ChevronRight from '../img/chevron_right.svg';
+import { MINIATURES_DATA } from './data/miniaturesData';
 
 const Section = styled.div``;
 
@@ -133,11 +135,19 @@ const CategorySection = React.memo(({ category }) => {
   );
 });
 
-const Miniature = ({ person }) => {
+const Miniature = () => {
+  // Récupère le paramètre d'URL (ex: 'ultia' ou 'deujna')
+  const { personId } = useParams();
+
+  // Récupère les données correspondantes
+  const person = MINIATURES_DATA[personId];
 
   if (!person) {
-    return null;
+    return <div style={{ textAlign: 'center', padding: '2rem' }}>
+      Aucune miniature trouvée pour ce créateur
+    </div>;
   }
+
   return (
     <div>
       <Section>
@@ -147,7 +157,9 @@ const Miniature = ({ person }) => {
             {person.categories.map(category => (
               <ListItem key={category.id}>
                 <Icon />
-                <StyledLink href={`#${category.id}`}>{category.title}</StyledLink>
+                <StyledLink href={`#${category.id}`}>
+                  {category.title}
+                </StyledLink>
               </ListItem>
             ))}
           </ListUl>

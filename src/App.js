@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 
 // Les pages
 import Accueil from './components/Accueil';
-import MiniatureContainer from './components/MiniatureContainer';
+import Miniature from './components/Miniature';
 import Commission from './components/Commission';
 import Portfolio from './components/Portfolio';
 import Emotes from './components/sous_menu/Emotes';
@@ -16,6 +16,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import Visuels from './components/sous_menu/Visuels';
 import Pointschaine from './components/sous_menu/Pointschaine';
 import Panneau from './components/sous_menu/Panneau';
+
 
 function NavConditional() {
   const location = useLocation();
@@ -34,7 +35,7 @@ function App() {
       <NavConditional />
       <Routes>
         <Route path="/" element={<Accueil/>} />
-        <Route path="/miniature" element={<MiniatureContainer/>} />
+        <Route path="/miniature/:personId" element={<Miniature />} />
         <Route path="/commission" element={<Commission/>} />
         <Route path="/portfolio" element={<Portfolio/>} />
         <Route path="/emotes" element={<Emotes/>} />

@@ -91,7 +91,7 @@ const Portfolio = () => {
     <Section>
       <Container>
         <Nav>
-          <NavItem href="/miniature">
+          <NavItem href="/miniature/ultia">
              Miniatures
           </NavItem>
           <NavItem href="/emotes">

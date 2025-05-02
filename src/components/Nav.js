@@ -244,7 +244,14 @@ function Nav() {
     <Navbar className={showLinks ? 'showNav' : ''}>
       <UlNav>
         <li><NavLink to="/" end onClick={handleLinkClick}>Accueil</NavLink></li>
-        <li><NavLink to="/miniature" onClick={handleLinkClick}>Miniatures</NavLink></li>
+        <li className={openMenu === 'miniature' ? 'open' : ''}>
+          <Anchor href="/" onClick={(e) => handleMenuClick('miniature', e)}>Miniatures</Anchor>
+          <ul>
+            <li><NavLink to="/miniature/ultia" onClick={handleLinkClick}>Ultia</NavLink></li>
+            <li><NavLink to="/miniature/deujna" onClick={handleLinkClick}>Deujna</NavLink></li>
+            <li><NavLink to="/miniature/tsunadida" onClick={handleLinkClick}>Tsunadida</NavLink></li>
+          </ul>
+        </li>
         <li><NavLink to="/commission" onClick={handleLinkClick}>Commissions</NavLink></li>
         <li className={openMenu === 'twitch' ? 'open' : ''}>
           <Anchor href="/" onClick={(e) => handleMenuClick('twitch', e)}>Twitch</Anchor>

@@ -1,4 +1,30 @@
 
+export const ultiaAutre = [
+  { id: 21, imageUrl: '../img/miniatures/ultia/autres/party_Animals.png' },
+  { id: 21, imageUrl: '../img/miniatures/ultia/autres/Miniature_Frames_Festival_2025.png' },
+  { id: 21, imageUrl: '../img/miniatures/ultia/autres/BEST_OF_2024.png' },
+  { id: 20, imageUrl: '../img/miniatures/ultia/autres/Miniature_Dress_to_impress.png' },
+  { id: 19, imageUrl: '../img/miniatures/ultia/autres/Miniature_Totally_Spies.png' },
+  { id: 18, imageUrl: '../img/miniatures/ultia/autres/Miniature_BestOf_Zevent_2024.png' },
+  { id: 17, imageUrl: '../img/miniatures/ultia/autres/Miniature_caravan_Sandwitch.png' },
+  { id: 16, imageUrl: '../img/miniatures/ultia/autres/Miniature_Nifnif.png' },
+  { id: 15, imageUrl: '../img/miniatures/ultia/autres/Miniature_The_Headliners.png' },
+  { id: 14, imageUrl: '../img/miniatures/ultia/autres/Miniature_react_Bratz_Genie_et_Magie.png' },
+  { id: 13, imageUrl: '../img/miniatures/ultia/autres/fanart_ete.png' },
+  { id: 12, imageUrl: '../img/miniatures/ultia/autres/mariage.png' },
+  { id: 11, imageUrl: '../img/miniatures/ultia/autres/webtoon.png' },
+  { id: 10, imageUrl: '../img/miniatures/ultia/autres/perdu_paris.jpg' },
+  { id: 9, imageUrl: '../img/miniatures/ultia/autres/twitch_rivals.jpg' },
+  { id: 8, imageUrl: '../img/miniatures/ultia/autres/big_city.jpg' },
+  { id: 7, imageUrl: '../img/miniatures/ultia/autres/unboxing_test.jpg' },
+  { id: 6, imageUrl: '../img/miniatures/ultia/autres/spiritcity.png' },
+  { id: 5, imageUrl: '../img/miniatures/ultia/autres/indieworld.jpg' },
+  { id: 4, imageUrl: '../img/miniatures/ultia/autres/picopark.jpg' },
+  { id: 3, imageUrl: '../img/miniatures/ultia/autres/pitchmeanindie.jpg' },
+  { id: 2, imageUrl: '../img/miniatures/ultia/autres/openroad.png' },
+  { id: 1, imageUrl: '../img/miniatures/ultia/autres/creation_entreprise.png' },
+];
+
 export const ultiaCyberpunk = [  
     { id: 1, imageUrl: '../img/miniatures/ultia/cyberpunk/01.jpg' },
     { id: 2, imageUrl: '../img/miniatures/ultia/cyberpunk/02.jpg' },
@@ -57,28 +83,4 @@ export const ultiaCyberpunk = [
     { id: 12, imageUrl: '../img/miniatures/ultia/stardewvalley/14.jpg' },
     { id: 13, imageUrl: '../img/miniatures/ultia/stardewvalley/15.jpg' },
     { id: 14, imageUrl: '../img/miniatures/ultia/stardewvalley/16.jpg' }
-  ];
-  
-  export const ultiaAutre = [
-    { id: 21, imageUrl: '../img/miniatures/ultia/autres/BEST_OF_2024.png' },
-    { id: 20, imageUrl: '../img/miniatures/ultia/autres/Miniature_Dress_to_impress.png' },
-    { id: 19, imageUrl: '../img/miniatures/ultia/autres/Miniature_Totally_Spies.png' },
-    { id: 18, imageUrl: '../img/miniatures/ultia/autres/Miniature_BestOf_Zevent_2024.png' },
-    { id: 17, imageUrl: '../img/miniatures/ultia/autres/Miniature_caravan_Sandwitch.png' },
-    { id: 16, imageUrl: '../img/miniatures/ultia/autres/Miniature_Nifnif.png' },
-    { id: 15, imageUrl: '../img/miniatures/ultia/autres/Miniature_The_Headliners.png' },
-    { id: 14, imageUrl: '../img/miniatures/ultia/autres/Miniature_react_Bratz_Genie_et_Magie.png' },
-    { id: 13, imageUrl: '../img/miniatures/ultia/autres/fanart_ete.png' },
-    { id: 12, imageUrl: '../img/miniatures/ultia/autres/mariage.png' },
-    { id: 11, imageUrl: '../img/miniatures/ultia/autres/webtoon.png' },
-    { id: 10, imageUrl: '../img/miniatures/ultia/autres/perdu_paris.jpg' },
-    { id: 9, imageUrl: '../img/miniatures/ultia/autres/twitch_rivals.jpg' },
-    { id: 8, imageUrl: '../img/miniatures/ultia/autres/big_city.jpg' },
-    { id: 7, imageUrl: '../img/miniatures/ultia/autres/unboxing_test.jpg' },
-    { id: 6, imageUrl: '../img/miniatures/ultia/autres/spiritcity.png' },
-    { id: 5, imageUrl: '../img/miniatures/ultia/autres/indieworld.jpg' },
-    { id: 4, imageUrl: '../img/miniatures/ultia/autres/picopark.jpg' },
-    { id: 3, imageUrl: '../img/miniatures/ultia/autres/pitchmeanindie.jpg' },
-    { id: 2, imageUrl: '../img/miniatures/ultia/autres/openroad.png' },
-    { id: 1, imageUrl: '../img/miniatures/ultia/autres/creation_entreprise.png' },
   ];
