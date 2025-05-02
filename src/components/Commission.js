@@ -173,6 +173,7 @@ const Commission = () => {
         <ListUl>
           <ListItem><Icon/>Miniature : 15€ l'unité </ListItem>
           <ListItem><Icon/>Pack de 5 miniatures : 60€ </ListItem>
+          <ListItem><Icon/>Changement de fond ou de photo : 8€</ListItem>
           <ListItem><Icon/>(les prix sont par mois) </ListItem>
         </ListUl>
         <Image src={commissionMiniature} alt="Exemple Miniature" />
