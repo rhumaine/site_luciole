@@ -9,8 +9,8 @@ import commissionEmotes from '../img/portfolio/emotes.png';
 import commissionBadges from '../img/portfolio/badges.png';
 import commissionPlanning from '../img/portfolio/planning.jpg';
 import commissionOverlay from '../img/portfolio/overlay.jpg';
-import commissionVisuels1 from '../img/portfolio/visuel.png';
-import commissionLogo from '../img/portfolio/logo.jpg';
+import commissionVisuels1 from '../img/portfolio/Visuels2.png';
+import commissionLogo from '../img/portfolio/logo.png';
 import commissionBanniere from '../img/portfolio/banniere.jpg';
 import commissionPanneau from '../img/portfolio/panneaux_site.png';
 
@@ -220,7 +220,8 @@ const Commission = () => {
         <Image src={commissionVisuels1} alt="Exemple Visuels1" />
         <TextU id="da">D.A</TextU>
         <ListUl>
-          <ListItem><Icon/>création d'une DA complète : 10€ par heure</ListItem>
+          <ListItem><Icon/>Création d'un logo : 50€</ListItem>
+          <ListItem><Icon/>Création d'une photo de profil : 40€</ListItem>
           <ListItem><Icon/>Bannière - Montage sur photoshop :30€</ListItem> 
           <ListItem><Icon/>Bannière - Illustration : 60€</ListItem> 
         </ListUl>
